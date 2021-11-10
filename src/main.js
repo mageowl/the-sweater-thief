@@ -1,13 +1,26 @@
+import Main from "./classes/scenes/main.js";
+
 const game = new Phaser.Game({
 	type: Phaser.AUTO,
 	scale: {
-		mode: Phaser.Scale.RESIZE
+		autoCenter: true,
+		mode: Phaser.Scale.FIT,
+		width: 1280,
+		height: 720
 	},
 	physics: {
-		default: "arcade"
+		default: "arcade",
+		arcade: {
+			gravity: { y: 400 },
+			debug: false
+		}
+	},
+	loader: {
+		baseURL: "assets"
 	},
 	render: {
 		pixelArt: true
 	},
-	scene: null
+	scene: Main,
+	backgroundColor: "#333333"
 });
