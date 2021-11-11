@@ -21,6 +21,8 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
 		scene.updateObj(this);
 
 		this.keys = scene.input.keyboard.addKeys("W,A,S,D");
+
+		this.setSize(12, 23).setOffset(2, 9);
 	}
 
 	update() {
@@ -36,12 +38,15 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
 
 		// Animation
 		if (this.body.onFloor()) {
-			if (input.D) this.play("player.run", true).setFlipX(false);
-			else if (input.A) this.play("player.run", true).setFlipX(true);
+			if (input.D) this.play("player.run", true);
+			else if (input.A) this.play("player.run", true);
 			else this.play("player.idle", true);
 		} else {
 			if (this.body.velocity.y < 0) this.play("player.jump.up");
 			else this.play("player.jump.down");
 		}
+
+		if (input.D) this.setFlipX(false);
+		else if (input.A) this.setFlipX(true);
 	}
 }

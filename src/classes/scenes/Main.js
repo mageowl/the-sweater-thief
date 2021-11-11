@@ -10,7 +10,7 @@ export default class Main extends UpdatedScene {
 			"sprites/player/player.json"
 		);
 
-		this.load.image("ground", "sprites/tileset/ground_tile.png");
+		this.load.image("tileset", "sprites/tileset/tileset.png");
 		this.load.image("control", "sprites/tileset/control.png");
 
 		this.load.tilemapTiledJSON("playground", "tilemap/playground.json");
@@ -24,10 +24,10 @@ export default class Main extends UpdatedScene {
 		const entities = this.add.group();
 
 		const world = this.add.tilemap("playground");
-		world.addTilesetImage("Ground", "ground");
+		world.addTilesetImage("Level", "tileset");
 		world.addTilesetImage("Control", "control");
 		this.level = world
-			.createLayer("ground", "Ground", 0, 0)
+			.createLayer("ground", "Level", 0, 0)
 			.setCollisionByProperty({ collision: true });
 		this.jumps = world
 			.createLayer("jumps", "Control", 0, 0)
