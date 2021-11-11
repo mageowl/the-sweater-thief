@@ -12,7 +12,7 @@ const game = new Phaser.Game({
 		default: "arcade",
 		arcade: {
 			gravity: { y: 400 },
-			debug: false
+			debug: true
 		}
 	},
 	loader: {

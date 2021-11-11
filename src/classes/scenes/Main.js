@@ -1,3 +1,4 @@
+import Cloud from "../objects/Cloud.js";
 import Otis from "../objects/Otis.js";
 import Player from "../objects/Player.js";
 import UpdatedScene from "../template/scenes/UpdatedScene.js";
@@ -10,6 +11,8 @@ export default class Main extends UpdatedScene {
 			"sprites/player/player.json"
 		);
 
+		this.load.image("cloud", "sprites/tileset/platform_cloud.png");
+
 		this.load.image("tileset", "sprites/tileset/tileset.png");
 		this.load.image("control", "sprites/tileset/control.png");
 
@@ -21,7 +24,7 @@ export default class Main extends UpdatedScene {
 		this.anims.createFromAseprite("player");
 
 		// Groups
-		const entities = this.add.group();
+		this.entities = this.add.group();
 
 		// Tilemap
 		const world = this.add.tilemap("playground");
@@ -36,27 +39,26 @@ export default class Main extends UpdatedScene {
 		this.jumps = world.createLayer("jumps", "Control", 0, 0).setVisible(false);
 
 		const platforms = world.getObjectLayer("platforms");
-		platforms.objects.forEach(({ type, x, y }) => {
+		platforms.objects.forEach(({ type, x, y, width, height }) => {
 			switch (type) {
 				case "cloud":
-					clouds.add();
+					new Cloud(this, x + width / 2, y + height / 2);
 			}
 		});
 
 		// Player
 		const player = new Player(this, 0, 0);
-		entities.add(player);
+		this.entities.add(player);
 
 		// Otis
 		let otis;
 		setTimeout(() => {
 			otis = new Otis(this, 0, 0, player);
-			entities.add(otis);
+			this.entities.add(otis);
 		}, 2000);
 
-		this.physics.add.collider(entities, this.level);
+		this.physics.add.collider(this.entities, this.level);
 
-		console.log(Math.max(world.heightInPixels - 10, 0));
 		this.cameras.main
 			.setZoom(3)
 			.startFollow(player)
