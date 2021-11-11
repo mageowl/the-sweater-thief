@@ -20,26 +20,39 @@ export default class Main extends UpdatedScene {
 		// Animations
 		this.anims.createFromAseprite("player");
 
-		// Create stuff
+		// Groups
 		const entities = this.add.group();
 
+		// Tilemap
 		const world = this.add.tilemap("playground");
 		world.addTilesetImage("Level", "tileset");
 		world.addTilesetImage("Control", "control");
 		this.level = world
-			.createLayer("ground", "Level", 0, 0)
+			.createLayer("level", "Level", 0, 0)
 			.setCollisionByProperty({ collision: true });
+
 		const background = world.createLayer("background", "Level", 0, 0);
+
 		this.jumps = world.createLayer("jumps", "Control", 0, 0).setVisible(false);
 
+		const platforms = world.getObjectLayer("platforms");
+		platforms.objects.forEach(({ type, x, y }) => {
+			switch (type) {
+				case "cloud":
+					clouds.add();
+			}
+		});
+
+		// Player
 		const player = new Player(this, 0, 0);
+		entities.add(player);
+
+		// Otis
 		let otis;
 		setTimeout(() => {
 			otis = new Otis(this, 0, 0, player);
 			entities.add(otis);
 		}, 2000);
-
-		entities.add(player);
 
 		this.physics.add.collider(entities, this.level);
 
