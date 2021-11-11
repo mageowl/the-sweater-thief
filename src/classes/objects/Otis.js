@@ -33,12 +33,13 @@ export default class Otis extends Phaser.Physics.Arcade.Sprite {
 			else if (Math.abs(diff) > 20)
 				this.setVelocityX(Math.sign(diff) * (Otis.SPEED / 2));
 
+			const jumpTile = this.scene.jumps.getTileAtWorldXY(this.x, this.y)?.index;
 			if (
-				((this.scene.jumps.getTileAtWorldXY(this.x, this.y)?.index === 5 &&
-					this.player.x > this.x) ||
-					(this.scene.jumps.getTileAtWorldXY(this.x, this.y)?.index === 4 &&
-						this.player.x < this.x)) &&
-				this.player.y < this.y &&
+				(((jumpTile === 1 || jumpTile === 3) && this.x < this.player.x) ||
+					((jumpTile === 2 || jumpTile === 4) && this.x > this.player.x)) &&
+				(jumpTile === 3 || jumpTile === 4
+					? this.player.y + 25 < this.y
+					: true) &&
 				this.body.onFloor()
 			) {
 				this.setVelocityY(-Otis.JUMP_HEIGHT);
