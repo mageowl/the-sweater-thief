@@ -4,7 +4,11 @@ import UpdatedScene from "../template/scenes/UpdatedScene.js";
 
 export default class Main extends UpdatedScene {
 	preload() {
-		this.load.image("player", "sprites/player.png");
+		this.load.aseprite(
+			"player",
+			"sprites/player/player.png",
+			"sprites/player/player.json"
+		);
 
 		this.load.image("ground", "sprites/tileset/ground_tile.png");
 		this.load.image("control", "sprites/tileset/control.png");
@@ -13,6 +17,10 @@ export default class Main extends UpdatedScene {
 	}
 
 	create() {
+		// Animations
+		this.anims.createFromAseprite("player");
+
+		// Create stuff
 		const entities = this.add.group();
 
 		const world = this.add.tilemap("playground");

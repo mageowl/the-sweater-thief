@@ -28,7 +28,7 @@ export default class Otis extends Phaser.Physics.Arcade.Sprite {
 		if (!this.hasSweater) {
 			// Movement
 			const diff = this.player.x - this.x;
-			if (Math.abs(diff) > 30 || this.player.y - this.y < 10)
+			if (Math.abs(diff) > 30 || Math.abs(this.player.y - this.y) < 10)
 				this.setVelocityX(Math.sign(diff) * Otis.SPEED);
 			else if (Math.abs(diff) > 20)
 				this.setVelocityX(Math.sign(diff) * (Otis.SPEED / 2));
@@ -47,7 +47,7 @@ export default class Otis extends Phaser.Physics.Arcade.Sprite {
 			if (this.scene.physics.collide(this, this.player)) {
 				this.hasSweater = true;
 				this.player.hasSweater = false;
-				console.log("I GOT UR SWEATER");
+				console.log("Otis: I GOT UR SWEATER BRUH");
 			}
 		} else {
 			this.setVelocityX(0);
