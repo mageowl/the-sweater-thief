@@ -29,10 +29,8 @@ export default class Main extends UpdatedScene {
 		this.level = world
 			.createLayer("ground", "Level", 0, 0)
 			.setCollisionByProperty({ collision: true });
-		this.jumps = world
-			.createLayer("jumps", "Control", 0, 0)
-			.setCollisionByProperty({ collision: true })
-			.setVisible(false);
+		const background = world.createLayer("background", "Level", 0, 0);
+		this.jumps = world.createLayer("jumps", "Control", 0, 0).setVisible(false);
 
 		const player = new Player(this, 0, 0);
 		let otis;
@@ -45,6 +43,15 @@ export default class Main extends UpdatedScene {
 
 		this.physics.add.collider(entities, this.level);
 
-		this.cameras.main.setZoom(3).startFollow(player);
+		console.log(Math.max(world.heightInPixels - 10, 0));
+		this.cameras.main
+			.setZoom(3)
+			.startFollow(player)
+			.setBounds(
+				0,
+				Math.max(world.heightInPixels - 240),
+				world.widthInPixels,
+				world.heightInPixels
+			);
 	}
 }
