@@ -1,7 +1,8 @@
 import UpdatedScene from "../template/scenes/UpdatedScene.js";
 
 export default class Cloud extends Phaser.Physics.Arcade.Sprite {
-	strength = 20;
+	strength = 40;
+	xPos = 0;
 
 	/**
 	 * Creates an instance of Cloud.
@@ -12,6 +13,8 @@ export default class Cloud extends Phaser.Physics.Arcade.Sprite {
 	 */
 	constructor(scene, x, y) {
 		super(scene, x, y, "cloud");
+
+		this.xPos = x;
 
 		scene.add.existing(this);
 		scene.physics.add.existing(this);
@@ -27,6 +30,7 @@ export default class Cloud extends Phaser.Physics.Arcade.Sprite {
 	fall = (entity) => {
 		if (this.body.touching.up) {
 			this.strength -= 1;
+			this.x = this.xPos + Math.sin(this.strength / 1.5) * 2.5;
 			setTimeout(() => {
 				if (!this.body.touching.up) this.strength = 20;
 			}, 100);
