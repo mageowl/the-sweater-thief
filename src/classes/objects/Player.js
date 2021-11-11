@@ -48,5 +48,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
 
 		if (input.D) this.setFlipX(false);
 		else if (input.A) this.setFlipX(true);
+
+		this.setTint(this.hasSweater ? 0xffffff : 0xff0000);
 	}
 }
