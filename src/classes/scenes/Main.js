@@ -10,6 +10,11 @@ export default class Main extends UpdatedScene {
 			"sprites/player/player.png",
 			"sprites/player/player.json"
 		);
+		this.load.aseprite(
+			"otis",
+			"sprites/otis/otis.png",
+			"sprites/otis/otis.json"
+		);
 
 		this.load.image("cloud", "sprites/tileset/platform_cloud.png");
 
@@ -22,6 +27,7 @@ export default class Main extends UpdatedScene {
 	create() {
 		// Animations
 		this.anims.createFromAseprite("player");
+		this.anims.createFromAseprite("otis");
 
 		// Groups
 		this.entities = this.add.group();
@@ -38,7 +44,7 @@ export default class Main extends UpdatedScene {
 
 		this.jumps = world.createLayer("jumps", "Control", 0, 0).setVisible(false);
 
-		const platforms = world.getObjectLayer("platforms");
+		const platforms = world.getObjectLayer("objects");
 		platforms.objects.forEach(({ type, x, y, width, height }) => {
 			switch (type) {
 				case "cloud":

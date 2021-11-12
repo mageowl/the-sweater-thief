@@ -20,7 +20,6 @@ export default class Otis extends Phaser.Physics.Arcade.Sprite {
 		scene.physics.add.existing(this);
 		scene.updateObj(this);
 
-		this.setScale(0.5);
 		this.player = player;
 	}
 
@@ -46,7 +45,7 @@ export default class Otis extends Phaser.Physics.Arcade.Sprite {
 			}
 
 			// Steal Sweater
-			if (this.scene.physics.collide(this, this.player)) {
+			if (this.scene.physics.collide(this, this.player) && !this.hasSweater) {
 				this.hasSweater = true;
 				this.player.hasSweater = false;
 				console.log("Otis: I GOT UR SWEATER BRUH");
@@ -54,5 +53,7 @@ export default class Otis extends Phaser.Physics.Arcade.Sprite {
 		} else {
 			this.setVelocityX(0);
 		}
+
+		this.setTint(this.hasSweater ? 0xaa0000 : 0xffffff);
 	}
 }
