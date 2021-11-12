@@ -6,7 +6,7 @@ const game = new Phaser.Game({
 		autoCenter: true,
 		mode: Phaser.Scale.FIT,
 		width: 1280,
-		height: 720
+		height: 528
 	},
 	physics: {
 		default: "arcade",

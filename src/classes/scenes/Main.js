@@ -68,11 +68,6 @@ export default class Main extends UpdatedScene {
 		this.cameras.main
 			.setZoom(3)
 			.startFollow(player)
-			.setBounds(
-				0,
-				Math.max(world.heightInPixels - 240),
-				world.widthInPixels,
-				world.heightInPixels
-			);
+			.setBounds(0, 0, world.widthInPixels, world.heightInPixels);
 	}
 }

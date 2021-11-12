@@ -24,13 +24,18 @@ export default class Otis extends Phaser.Physics.Arcade.Sprite {
 	}
 
 	update() {
+		const dir = { right: false, left: false };
+
 		if (!this.hasSweater) {
 			// Movement
 			const diff = this.player.x - this.x;
-			if (Math.abs(diff) > 30 || Math.abs(this.player.y - this.y) < 10)
+			if (Math.abs(diff) > 30 || Math.abs(this.player.y - this.y) < 10) {
 				this.setVelocityX(Math.sign(diff) * Otis.SPEED);
-			else if (Math.abs(diff) > 20)
+				dir[diff > 0 ? "right" : "left"] = true;
+			} else if (Math.abs(diff) > 20) {
 				this.setVelocityX(Math.sign(diff) * (Otis.SPEED / 2));
+				dir[diff ? "right" : "left"] = true;
+			}
 
 			const jumpTile = this.scene.jumps.getTileAtWorldXY(this.x, this.y)?.index;
 			if (
@@ -53,6 +58,19 @@ export default class Otis extends Phaser.Physics.Arcade.Sprite {
 		} else {
 			this.setVelocityX(0);
 		}
+
+		// Animation
+		if (this.body.onFloor()) {
+			if (dir.right) this.play("otis.run", true);
+			else if (dir.left) this.play("otis.run", true);
+			else this.play("otis.idle", true);
+		} else {
+			if (this.body.velocity.y < 0) this.play("otis.jump.up");
+			else this.play("otis.jump.down");
+		}
+
+		if (dir.right) this.setFlipX(false);
+		else if (dir.left) this.setFlipX(true);
 
 		this.setTint(this.hasSweater ? 0xaa0000 : 0xffffff);
 	}
