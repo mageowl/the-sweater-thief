@@ -1,6 +1,8 @@
+import { getProperty } from "../../util.js";
 import Cloud from "../objects/Cloud.js";
 import Otis from "../objects/Otis.js";
 import Player from "../objects/Player.js";
+import Shrine from "../objects/Shrine.js";
 import UpdatedScene from "../template/scenes/UpdatedScene.js";
 
 export default class Main extends UpdatedScene {
@@ -17,6 +19,7 @@ export default class Main extends UpdatedScene {
 		);
 
 		this.load.image("cloud", "sprites/tileset/platform_cloud.png");
+		this.load.image("shrine", "sprites/tileset/shrine.png");
 
 		this.load.image("tileset", "sprites/tileset/tileset.png");
 		this.load.image("control", "sprites/tileset/control.png");
@@ -44,13 +47,24 @@ export default class Main extends UpdatedScene {
 
 		this.jumps = world.createLayer("jumps", "Control", 0, 0).setVisible(false);
 
+		const shrines = { start: null, end: null };
+
 		const platforms = world.getObjectLayer("objects");
-		platforms.objects.forEach(({ type, x, y, width, height }) => {
+		platforms.objects.forEach(({ type, x, y, width, height, properties }) => {
 			switch (type) {
-				case "cloud":
+				case "cloud": {
 					new Cloud(this, x + width / 2, y + height / 2);
+					break;
+				}
+				case "shrine": {
+					console.log(properties);
+					shrines[getProperty(properties, "start") ? "start" : "end"] =
+						new Shrine(this, x + width / 2, y + height / 2);
+					break;
+				}
 			}
 		});
+		console.log(shrines);
 
 		// Player
 		const player = new Player(this, 0, 0);
@@ -59,7 +73,7 @@ export default class Main extends UpdatedScene {
 		// Otis
 		let otis;
 		setTimeout(() => {
-			otis = new Otis(this, 0, 0, player);
+			otis = new Otis(this, shrines.start.x, shrines.start.y, player);
 			this.entities.add(otis);
 		}, 2000);
 
