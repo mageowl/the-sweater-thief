@@ -1,7 +1,7 @@
 import UpdatedScene from "../template/scenes/UpdatedScene.js";
 
 export default class Cloud extends Phaser.Physics.Arcade.Sprite {
-	strength = 40;
+	strength = 20;
 	xPos = 0;
 
 	/**
@@ -32,7 +32,10 @@ export default class Cloud extends Phaser.Physics.Arcade.Sprite {
 			this.strength -= 1;
 			this.x = this.xPos + Math.sin(this.strength / 1.5) * 2.5;
 			setTimeout(() => {
-				if (!this.body.touching.up) this.strength = 20;
+				if (!this.body.touching.up) {
+					this.strength = 20;
+					this.x = this.xPos;
+				}
 			}, 100);
 			if (this.strength === 0) {
 				this.body.checkCollision.none = true;
