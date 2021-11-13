@@ -21,6 +21,7 @@ export default class Otis extends Phaser.Physics.Arcade.Sprite {
 		scene.updateObj(this);
 
 		this.player = player;
+		this.setSize(8, 16).setOffset(4, 16);
 	}
 
 	update() {
@@ -34,7 +35,7 @@ export default class Otis extends Phaser.Physics.Arcade.Sprite {
 				dir[diff > 0 ? "right" : "left"] = true;
 			} else if (Math.abs(diff) > 20) {
 				this.setVelocityX(Math.sign(diff) * (Otis.SPEED / 2));
-				dir[diff ? "right" : "left"] = true;
+				dir[diff > 0 ? "right" : "left"] = true;
 			}
 
 			const jumpTile = this.scene.jumps.getTileAtWorldXY(this.x, this.y)?.index;
