@@ -152,10 +152,10 @@
   "size": { "w": 288, "h": 32 },
   "scale": "1",
   "frameTags": [
-   { "name": "player.sweater.idle", "from": 0, "to": 7, "direction": "forward" },
-   { "name": "player.sweater.run", "from": 8, "to": 15, "direction": "forward" },
-   { "name": "player.sweater.jump.up", "from": 16, "to": 16, "direction": "forward" },
-   { "name": "player.sweater.jump.down", "from": 17, "to": 17, "direction": "forward" }
+   { "name": "player.idle", "from": 0, "to": 7, "direction": "forward" },
+   { "name": "player.run", "from": 8, "to": 15, "direction": "forward" },
+   { "name": "player.jump.up", "from": 16, "to": 16, "direction": "forward" },
+   { "name": "player.jump.down", "from": 17, "to": 17, "direction": "forward" }
   ]
  }
 }
