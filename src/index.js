@@ -22,5 +22,5 @@ const game = new Phaser.Game({
 		pixelArt: true
 	},
 	scene: Main,
-	backgroundColor: "#333333"
+	backgroundColor: "#db604c"
 });

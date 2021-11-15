@@ -38,17 +38,33 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
 
 		// Animation
 		if (this.body.onFloor()) {
-			if (input.D) this.play("player.run", true);
-			else if (input.A) this.play("player.run", true);
-			else this.play("player.idle", true);
+			if (input.D)
+				this.play(
+					`player.${this.hasSweater ? "sweater" : "nosweater"}.run`,
+					true
+				);
+			else if (input.A)
+				this.play(
+					`player.${this.hasSweater ? "sweater" : "nosweater"}.run`,
+					true
+				);
+			else
+				this.play(
+					`player.${this.hasSweater ? "sweater" : "nosweater"}.idle`,
+					true
+				);
 		} else {
-			if (this.body.velocity.y < 0) this.play("player.jump.up");
-			else this.play("player.jump.down");
+			if (this.body.velocity.y < 0)
+				this.play(
+					`player.${this.hasSweater ? "sweater" : "nosweater"}.jump.up`
+				);
+			else
+				this.play(
+					`player.${this.hasSweater ? "sweater" : "nosweater"}.jump.down`
+				);
 		}
 
 		if (input.D) this.setFlipX(false);
 		else if (input.A) this.setFlipX(true);
-
-		this.setTint(this.hasSweater ? 0xffffff : 0xff0000);
 	}
 }
