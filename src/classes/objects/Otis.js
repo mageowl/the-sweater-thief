@@ -54,6 +54,8 @@ export default class Otis extends Phaser.Physics.Arcade.Sprite {
 			if (this.scene.physics.collide(this, this.player) && !this.hasSweater) {
 				this.hasSweater = true;
 				this.player.hasSweater = false;
+				this.setTexture("otis_sweater");
+				this.player.setTexture("player_no_sweater");
 				console.log("Otis: I GOT UR SWEATER BRUH");
 			}
 		} else {
@@ -62,17 +64,24 @@ export default class Otis extends Phaser.Physics.Arcade.Sprite {
 
 		// Animation
 		if (this.body.onFloor()) {
-			if (dir.right) this.play("otis.run", true);
-			else if (dir.left) this.play("otis.run", true);
-			else this.play("otis.idle", true);
+			if (dir.right || dir.left)
+				this.play(
+					{
+						key: `otis.${this.hasSweater ? "sweater" : "nosweater"}.run`,
+						repeat: -1
+					},
+					true
+				);
 		} else {
-			if (this.body.velocity.y < 0) this.play("otis.jump.up");
-			else this.play("otis.jump.down");
+			if (this.body.velocity.y < 0)
+				this.play(`otis.${this.hasSweater ? "sweater" : "nosweater"}.jump.up`);
+			else
+				this.play(
+					`otis.${this.hasSweater ? "sweater" : "nosweater"}.jump.down`
+				);
 		}
 
 		if (dir.right) this.setFlipX(false);
 		else if (dir.left) this.setFlipX(true);
-
-		this.setTint(this.hasSweater ? 0xaa0000 : 0xffffff);
 	}
 }

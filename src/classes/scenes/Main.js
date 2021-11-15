@@ -17,9 +17,24 @@ export default class Main extends UpdatedScene {
 			"sprites/otis/otis.png",
 			"sprites/otis/otis.json"
 		);
+		this.load.aseprite(
+			"player_no_sweater",
+			"sprites/player/player_no_sweater.png",
+			"sprites/player/player_no_sweater.json"
+		);
+		this.load.aseprite(
+			"otis_sweater",
+			"sprites/otis/otis_sweater.png",
+			"sprites/otis/otis_sweater.json"
+		);
 
-		this.load.image("cloud", "sprites/tileset/platform_cloud.png");
-		this.load.image("shrine", "sprites/tileset/shrine.png");
+		this.load.spritesheet("cloud", "sprites/tileset/platform_cloud.png", {
+			frameWidth: 48,
+			frameHeight: 32
+		});
+		this.load.spritesheet("shrine", "sprites/tileset/shrine.png", {
+			frameWidth: 32
+		});
 
 		this.load.image("tileset", "sprites/tileset/tileset.png");
 		this.load.image("control", "sprites/tileset/control.png");
@@ -31,6 +46,15 @@ export default class Main extends UpdatedScene {
 		// Animations
 		this.anims.createFromAseprite("player");
 		this.anims.createFromAseprite("otis");
+		this.anims.createFromAseprite("player_no_sweater");
+		this.anims.createFromAseprite("otis_sweater");
+		this.anims.create({
+			key: "shrine.summon",
+			frames: this.anims.generateFrameNumbers("shrine", {
+				frames: [1, 2, 3, 4, 5, 6, 7]
+			}),
+			frameRate: 10
+		});
 
 		// Groups
 		this.entities = this.add.group();
