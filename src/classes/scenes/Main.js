@@ -43,7 +43,7 @@ export default class Main extends UpdatedScene {
 		this.load.image("tileset", "sprites/tileset/tileset.png");
 		this.load.image("control", "sprites/tileset/control.png");
 
-		this.load.tilemapTiledJSON("playground", "tilemap/playground.json");
+		this.load.tilemapTiledJSON("playground", "tilemap/level_bridge.json");
 	}
 
 	create() {
@@ -110,13 +110,17 @@ export default class Main extends UpdatedScene {
 	createTilemap(world) {
 		this.level = world
 			.createLayer("level", "Level", 0, 0)
-			.setCollisionByProperty({ collision: true })
-			.setDepth(1);
+			.setCollisionByProperty({ collision: true });
 		this.level.forEachTile((t) => {
-			if (t.index >= 249 && t.index <= 251) t.collideDown = true;
+			if (t.index >= 254 && t.index <= 256) {
+				t.collideUp = true;
+				t.faceTop = true;
+			}
 		});
 
-		const background = world.createLayer("background", "Level", 0, 0);
+		const background = world
+			.createLayer("background", "Level", 0, 0)
+			.setDepth(-1);
 
 		this.jumps = world.createLayer("jumps", "Control", 0, 0).setVisible(false);
 
