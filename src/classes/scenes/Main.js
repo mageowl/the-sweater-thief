@@ -57,39 +57,8 @@ export default class Main extends UpdatedScene {
 		const world = this.add.tilemap("playground");
 		world.addTilesetImage("Level", "tileset");
 		world.addTilesetImage("Control", "control");
-		this.level = world
-			.createLayer("level", "Level", 0, 0)
-			.setCollisionByProperty({ collision: true })
-			.setDepth(1);
 
-		const background = world.createLayer("background", "Level", 0, 0);
-
-		this.jumps = world.createLayer("jumps", "Control", 0, 0).setVisible(false);
-
-		const shrines = { start: null, end: null };
-		const spawnPoints = { start: null, end: null };
-
-		const platforms = world.getObjectLayer("objects");
-		platforms.objects.forEach(
-			({ type, x, y, width, height, properties, name }) => {
-				switch (type) {
-					case "cloud": {
-						new Cloud(this, x + width / 2, y + height / 2);
-						break;
-					}
-					case "shrine": {
-						console.log(properties);
-						shrines[getProperty(properties, "start") ? "start" : "end"] =
-							new Shrine(this, x + width / 2, y + height / 2);
-						break;
-					}
-					case "player-spawn": {
-						spawnPoints[name] = { x, y: y - 16 };
-					}
-				}
-			}
-		);
-		console.log(shrines);
+		const { shrines, spawnPoints } = this.createTilemap(world);
 
 		// Player
 		const player = new Player(this, spawnPoints, "start");
@@ -129,5 +98,52 @@ export default class Main extends UpdatedScene {
 			}),
 			frameRate: 10
 		});
+	}
+
+	/**
+	 * Create Tilemap layers
+	 *
+	 * @param {Phaser.Tilemaps.Tilemap} world
+	 * @return {*}
+	 * @memberof Main
+	 */
+	createTilemap(world) {
+		this.level = world
+			.createLayer("level", "Level", 0, 0)
+			.setCollisionByProperty({ collision: true })
+			.setDepth(1);
+		this.level.forEachTile((t) => {
+			if (t.index >= 249 && t.index <= 251) t.collideDown = true;
+		});
+
+		const background = world.createLayer("background", "Level", 0, 0);
+
+		this.jumps = world.createLayer("jumps", "Control", 0, 0).setVisible(false);
+
+		const shrines = { start: null, end: null };
+		const spawnPoints = { start: null, end: null };
+
+		const objects = world.getObjectLayer("objects");
+		objects.objects.forEach(
+			({ type, x, y, width, height, properties, name }) => {
+				switch (type) {
+					case "cloud": {
+						new Cloud(this, x + width / 2, y + height / 2);
+						break;
+					}
+					case "shrine": {
+						console.log(properties);
+						shrines[getProperty(properties, "start") ? "start" : "end"] =
+							new Shrine(this, x + width / 2, y + height / 2);
+						break;
+					}
+					case "player-spawn": {
+						spawnPoints[name] = { x, y: y - 16 };
+					}
+				}
+			}
+		);
+
+		return { shrines, spawnPoints };
 	}
 }
