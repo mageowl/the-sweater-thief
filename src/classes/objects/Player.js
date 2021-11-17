@@ -5,6 +5,8 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
 	static JUMP_HEIGHT = 200;
 
 	hasSweater = true;
+	stun = 0;
+	dead = false;
 
 	/**
 	 * Creates an instance of Player.
@@ -13,8 +15,8 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
 	 * @param {number} y
 	 * @memberof Player
 	 */
-	constructor(scene, x, y) {
-		super(scene, x, y, "player");
+	constructor(scene, spawnPoints, side) {
+		super(scene, spawnPoints[side].x, spawnPoints[side].y, "player");
 
 		scene.add.existing(this);
 		scene.physics.add.existing(this);
@@ -23,6 +25,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
 		this.keys = scene.input.keyboard.addKeys("W,A,S,D");
 
 		this.setSize(12, 23).setOffset(2, 9);
+		this.spawn = spawnPoints;
 	}
 
 	update() {
@@ -30,41 +33,67 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
 			Object.entries(this.keys).map(([name, { isDown }]) => [name, isDown])
 		);
 
-		// Movement
-		this.setVelocityX((input.D - input.A) * Player.SPEED);
-		if (input.W && this.body.onFloor()) {
-			this.setVelocityY(-Player.JUMP_HEIGHT);
-		}
+		if (this.stun > 0) {
+			this.stun--;
+			this.play("player.nosweater.stunned", true);
+			if (this.body.onFloor()) this.setVelocityX(0);
+			return;
+		} else if (!this.dead) {
+			// Movement
+			this.setVelocityX((input.D - input.A) * Player.SPEED);
+			if (input.W && this.body.onFloor()) {
+				this.setVelocityY(-Player.JUMP_HEIGHT);
+			}
 
-		// Animation
-		if (this.body.onFloor()) {
-			if (input.D)
-				this.play(
-					`player.${this.hasSweater ? "sweater" : "nosweater"}.run`,
-					true
-				);
-			else if (input.A)
-				this.play(
-					`player.${this.hasSweater ? "sweater" : "nosweater"}.run`,
-					true
-				);
-			else
-				this.play(
-					`player.${this.hasSweater ? "sweater" : "nosweater"}.idle`,
-					true
-				);
-		} else {
-			if (this.body.velocity.y < 0)
-				this.play(
-					`player.${this.hasSweater ? "sweater" : "nosweater"}.jump.up`
-				);
-			else
-				this.play(
-					`player.${this.hasSweater ? "sweater" : "nosweater"}.jump.down`
-				);
-		}
+			// Hazards
+			const currentTile = this.scene.level.getTileAtWorldXY(
+				this.x,
+				this.y + this.height / 2 - 3
+			)?.index;
+			if (currentTile >= 164 && currentTile <= 167) {
+				// DIE!
+				this.play("player.death").once("animationcomplete", () => {
+					const respawn = this.spawn[this.hasSweater ? "start" : "end"];
+					this.setPosition(respawn.x, respawn.y);
+					this.dead = false;
+					this.setVelocity(0).setDepth(0).body.setAllowGravity(true);
+				});
+				this.dead = true;
+				this.setVelocity(0).setDepth(2).body.setAllowGravity(false);
 
-		if (input.D) this.setFlipX(false);
-		else if (input.A) this.setFlipX(true);
+				return;
+			}
+
+			// Animation
+			if (this.body.onFloor()) {
+				if (input.D)
+					this.play(
+						`player.${this.hasSweater ? "sweater" : "nosweater"}.run`,
+						true
+					);
+				else if (input.A)
+					this.play(
+						`player.${this.hasSweater ? "sweater" : "nosweater"}.run`,
+						true
+					);
+				else
+					this.play(
+						`player.${this.hasSweater ? "sweater" : "nosweater"}.idle`,
+						true
+					);
+			} else {
+				if (this.body.velocity.y < 0)
+					this.play(
+						`player.${this.hasSweater ? "sweater" : "nosweater"}.jump.up`
+					);
+				else
+					this.play(
+						`player.${this.hasSweater ? "sweater" : "nosweater"}.jump.down`
+					);
+			}
+
+			if (input.D) this.setFlipX(false);
+			else if (input.A) this.setFlipX(true);
+		}
 	}
 }
