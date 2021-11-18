@@ -136,7 +136,7 @@
   "size": { "w": 512, "h": 48 },
   "scale": "1",
   "frameTags": [
-   { "name": "balloons.Static", "from": 0, "to": 10, "direction": "forward" },
+   { "name": "balloons.static", "from": 0, "to": 10, "direction": "forward" },
    { "name": "balloons.hit", "from": 11, "to": 15, "direction": "forward" }
   ]
  }
