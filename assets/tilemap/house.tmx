@@ -1,0 +1,780 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="20" height="22" tilewidth="16" tileheight="16" infinite="0" nextlayerid="18" nextobjectid="23">
+ <tileset firstgid="1" name="Control" tilewidth="16" tileheight="16" tilecount="4" columns="4">
+  <image source="../sprites/tileset/control.png" width="64" height="16"/>
+ </tileset>
+ <tileset firstgid="5" name="Level" tilewidth="16" tileheight="16" tilecount="660" columns="60">
+  <image source="../sprites/tileset/tileset.png" width="960" height="176"/>
+  <tile id="0">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="6">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="7">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="60">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="61">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="62">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="63">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="64">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="65">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="66">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="67">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="120">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="121">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="122">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="123">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="124">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="125">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="126">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="127">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="180">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="181">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="182">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="183">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="184">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="185">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="186">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="187">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="240">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="241">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="242">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="243">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="244">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="245">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="246">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="247">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="300">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="301">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="302">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="303">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="304">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="305">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="306">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="307">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="360">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="361">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="362">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="363">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="364">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="365">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="366">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="367">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="420">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="421">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="422">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="423">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="424">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="425">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="426">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="427">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="480">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="481">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="482">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="483">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="484">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="485">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="486">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="487">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="540">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="541">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="542">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="543">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="544">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="545">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="546">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="547">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="600">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="601">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="602">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="603">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="604">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="605">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="606">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="607">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="665" name="treeline_3" tilewidth="16" tileheight="16" tilecount="200" columns="20">
+  <image source="../sprites/parallax/trees_background.png" width="320" height="175"/>
+ </tileset>
+ <tileset firstgid="865" name="treeline_2" tilewidth="16" tileheight="16" tilecount="200" columns="20">
+  <image source="../sprites/parallax/trees_midground.png" width="320" height="160"/>
+ </tileset>
+ <tileset firstgid="1065" name="treeline_1" tilewidth="16" tileheight="16" tilecount="200" columns="20">
+  <image source="../sprites/parallax/trees_foreground.png" width="320" height="160"/>
+ </tileset>
+ <tileset firstgid="1265" name="clouds_1" tilewidth="16" tileheight="16" tilecount="40" columns="20">
+  <image source="../sprites/parallax/clouds_1.png" width="320" height="32"/>
+ </tileset>
+ <tileset firstgid="1305" name="clouds_2" tilewidth="16" tileheight="16" tilecount="60" columns="20">
+  <image source="../sprites/parallax/clouds_2.png" width="320" height="48"/>
+ </tileset>
+ <tileset firstgid="1365" name="sun" tilewidth="16" tileheight="16" tilecount="16" columns="4">
+  <image source="../sprites/parallax/sun.png" width="64" height="64"/>
+ </tileset>
+ <tileset firstgid="1381" name="rays" tilewidth="16" tileheight="16" tilecount="80" columns="20">
+  <image source="../sprites/parallax/sky_gradient.png" width="320" height="64"/>
+ </tileset>
+ <tileset firstgid="1461" name="town" tilewidth="16" tileheight="16" tilecount="140" columns="20">
+  <image source="../sprites/parallax/town_background.png" width="320" height="112"/>
+ </tileset>
+ <tileset firstgid="1601" name="forest" tilewidth="16" tileheight="16" tilecount="140" columns="20">
+  <image source="../sprites/parallax/forest_background.png" width="320" height="112"/>
+ </tileset>
+ <layer id="7" name="sky" width="20" height="22">
+  <data encoding="csv">
+8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,
+8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,
+8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,
+8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,
+8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,
+8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,
+8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,
+8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,
+8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,
+8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,
+8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,
+8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,
+8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,
+8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,
+8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,
+8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,
+8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,
+8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,
+8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,
+8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,
+8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,
+8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8
+</data>
+ </layer>
+ <layer id="12" name="town" width="20" height="22">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+1461,1462,1463,1464,1465,1466,1467,1468,1469,1470,1471,1472,1473,1474,1475,1476,1477,1478,1479,1480,
+1481,1482,1483,1484,1485,1486,1487,1488,1489,1490,1491,1492,1493,1494,1495,1496,1497,1498,1499,1500,
+1501,1502,1503,1504,1505,1506,1507,1508,1509,1510,1511,1512,1513,1514,1515,1516,1517,1518,1519,1520,
+1521,1522,1523,1524,1525,1526,1527,1528,1529,1530,1531,1532,1533,1534,1535,1536,1537,1538,1539,1540,
+1541,1542,1543,1544,1545,1546,1547,1548,1549,1550,1551,1552,1553,1554,1555,1556,1557,1558,1559,1560,
+1561,1562,1563,1564,1565,1566,1567,1568,1569,1570,1571,1572,1573,1574,1575,1576,1577,1578,1579,1580,
+1581,1582,1583,1584,1585,1586,1587,1588,1589,1590,1591,1592,1593,1594,1595,1596,1597,1598,1599,1600,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="13" name="forest" width="20" height="22">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+1601,1602,1603,1604,1605,1606,1607,1608,1609,1610,1611,1612,1613,1614,1615,1616,1617,1618,1619,1620,
+1621,1622,1623,1624,1625,1626,1627,1628,1629,1630,1631,1632,1633,1634,1635,1636,1637,1638,1639,1640,
+1641,1642,1643,1644,1645,1646,1647,1648,1649,1650,1651,1652,1653,1654,1655,1656,1657,1658,1659,1660,
+1661,1662,1663,1664,1665,1666,1667,1668,1669,1670,1671,1672,1673,1674,1675,1676,1677,1678,1679,1680,
+1681,1682,1683,1684,1685,1686,1687,1688,1689,1690,1691,1692,1693,1694,1695,1696,1697,1698,1699,1700,
+1701,1702,1703,1704,1705,1706,1707,1708,1709,1710,1711,1712,1713,1714,1715,1716,1717,1718,1719,1720,
+1721,1722,1723,1724,1725,1726,1727,1728,1729,1730,1731,1732,1733,1734,1735,1736,1737,1738,1739,1740
+</data>
+ </layer>
+ <layer id="11" name="rays" width="20" height="22">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+1381,1382,1383,1384,1385,1386,1387,1388,1389,1390,1391,1392,1393,1394,1395,1396,1397,1398,1399,1400,
+1401,1402,1403,1404,1405,1406,1407,1408,1409,1410,1411,1412,1413,1414,1415,1416,1417,1418,1419,1420,
+1421,1422,1423,1424,1425,1426,1427,1428,1429,1430,1431,1432,1433,1434,1435,1436,1437,1438,1439,1440,
+1441,1442,1443,1444,1445,1446,1447,1448,1449,1450,1451,1452,1453,1454,1455,1456,1457,1458,1459,1460,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="8" name="sun" width="20" height="22">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,488,489,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,548,549,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,13,14,15,16,17,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,73,74,75,76,77,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,133,134,135,136,137,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,193,194,195,196,197,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="9" name="clouds_2" width="20" height="22">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+1305,1306,1307,1308,1309,1310,1311,1312,1313,1314,1315,1316,1317,1318,1319,1320,1321,1322,1323,1324,
+1325,1326,1327,1328,1329,1330,1331,1332,1333,1334,1335,1336,1337,1338,1339,1340,1341,1342,1343,1344,
+1345,1346,1347,1348,1349,1350,1351,1352,1353,1354,1355,1356,1357,1358,1359,1360,1361,1362,1363,1364,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="10" name="clouds_1" width="20" height="22">
+  <data encoding="csv">
+1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,
+1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,
+1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,
+1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,
+1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,
+1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,
+1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,
+1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,1269,
+1265,1266,1267,1268,1269,1270,1271,1272,1273,1274,1275,1276,1277,1278,1279,1280,1281,1282,1283,1284,
+1285,1286,1287,1288,1289,1290,1291,1292,1293,1294,1295,1296,1297,1298,1299,1300,1301,1302,1303,1304,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="3" name="jumps" width="20" height="22">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="15" name="background2" width="20" height="22">
+  <data encoding="csv">
+23,23,23,23,23,23,27,0,0,0,0,0,0,0,0,0,0,0,0,0,
+23,23,23,23,23,26,27,0,0,0,0,0,0,0,0,0,0,0,0,0,
+23,23,23,23,23,86,87,0,0,0,0,0,0,0,0,0,0,0,0,0,
+23,23,23,23,26,27,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+23,23,23,23,86,87,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+23,24,25,26,27,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+83,84,85,86,87,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+143,144,145,146,147,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+203,204,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+383,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+263,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+383,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+323,0,0,101,102,103,104,101,102,103,104,101,102,103,104,0,0,0,0,0,
+383,0,0,161,162,163,164,161,162,163,164,161,162,163,164,0,0,0,0,0,
+383,0,0,221,222,223,224,221,222,223,224,221,222,223,224,0,0,0,0,0,
+263,0,0,281,282,283,284,281,282,283,284,281,282,283,284,0,0,0,0,0,
+383,0,0,341,342,343,344,341,342,343,344,341,342,343,344,0,0,0,0,0,
+383,0,0,401,402,403,404,401,402,403,404,401,402,403,404,0,0,0,0,0,
+383,0,0,461,462,463,464,461,462,463,464,461,462,463,464,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="4" name="background1" width="20" height="22">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+213,214,215,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+273,274,275,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+333,334,335,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="6" name="objects">
+  <object id="10" type="house" x="80" y="144" width="176" height="160"/>
+  <object id="13" name="end" type="player-spawn" x="304" y="304">
+   <properties>
+    <property name="start" type="bool" value="false"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="19" type="bush" x="32" y="272" width="32" height="32"/>
+  <object id="20" type="balloons" x="272" y="256" width="32" height="48"/>
+  <object id="21" type="bush" x="240" y="272" width="32" height="32"/>
+  <object id="22" name="start" type="player-spawn" x="144" y="304">
+   <properties>
+    <property name="start" type="bool" value="false"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <layer id="1" name="level" width="20" height="22">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,36,37,38,39,40,0,0,0,0,0,0,0,0,36,37,38,39,40,0,
+0,96,97,98,99,100,0,0,0,0,0,0,0,0,96,97,98,99,100,0,
+0,156,157,158,159,160,0,0,0,0,0,0,0,0,156,157,158,159,160,0,
+130,216,217,218,219,220,0,0,0,0,0,0,0,0,216,217,218,219,220,0,
+186,276,277,278,279,280,0,0,0,0,0,0,0,0,276,277,278,279,280,0,
+186,336,337,338,339,340,0,0,0,0,0,0,0,0,336,337,338,339,340,0,
+186,396,397,398,399,400,0,0,0,0,0,0,0,0,396,397,398,399,400,0,
+186,456,457,458,459,460,0,0,0,0,0,0,0,0,456,457,458,459,460,0,
+186,126,126,126,126,126,126,126,126,126,126,126,126,126,126,126,126,126,126,126,
+186,186,186,186,186,186,186,186,186,186,186,186,186,186,186,186,186,186,186,186,
+186,186,186,186,186,186,186,186,186,186,186,186,186,186,186,186,186,186,186,186
+</data>
+ </layer>
+</map>
