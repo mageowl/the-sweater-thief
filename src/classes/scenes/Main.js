@@ -100,6 +100,47 @@ export default class Main extends UpdatedScene {
 			}),
 			frameRate: 10
 		});
+
+		this.anims.create({
+			key: "npc_cocoa_dude_left",
+			frames: "npc_cocoa_dude_left",
+			frameRate: 10
+		});
+		this.anims.create({
+			key: "npc_cocoa_dude_right",
+			frames: "npc_cocoa_dude_right",
+			frameRate: 10
+		});
+		this.anims.create({
+			key: "npc_cocoa_lady_right",
+			frames: "npc_cocoa_lady_right",
+			frameRate: 10
+		});
+		this.anims.create({
+			key: "npc_dancing_dude_left",
+			frames: "npc_dancing_dude_left",
+			frameRate: 10
+		});
+		this.anims.create({
+			key: "npc_dancing_dude_right",
+			frames: "npc_dancing_dude_right",
+			frameRate: 10
+		});
+		this.anims.create({
+			key: "npc_dancing_lady_left",
+			frames: "npc_dancing_lady_left",
+			frameRate: 10
+		});
+		this.anims.create({
+			key: "npc_dancing_lady_right",
+			frames: "npc_dancing_lady_right",
+			frameRate: 10
+		});
+		this.anims.create({
+			key: "npc_idle_lady_left",
+			frames: "npc_idle_lady_left",
+			frameRate: 10
+		});
 	}
 
 	/**
@@ -166,6 +207,15 @@ export default class Main extends UpdatedScene {
 							.sprite(x, y, "balloons")
 							.setOrigin(0)
 							.play({ key: "balloons", repeat: -1 });
+						break;
+					}
+					case "npc": {
+						console.log(getProperty(properties, "sprite"));
+						this.add
+							.sprite(x, y, "npc")
+							.setOrigin(0)
+							.play({ key: getProperty(properties, "sprite"), repeat: -1 });
+						break;
 					}
 				}
 			}

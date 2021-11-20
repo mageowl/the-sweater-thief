@@ -2,7 +2,8 @@ import UpdatedScene from "../template/scenes/UpdatedScene.js";
 import Player from "./Player.js";
 
 export default class Otis extends Phaser.Physics.Arcade.Sprite {
-	static SPEED = 100;
+	static SPEED_SWEATER = 100;
+	static SPEED = 125;
 	static JUMP_HEIGHT = 200;
 	static currentLevel = null;
 	static hasSweater = false;
@@ -79,9 +80,9 @@ export default class Otis extends Phaser.Physics.Arcade.Sprite {
 						Math.abs(diff) > 30 ||
 						Math.abs(this.shrines.start.y - this.y) < 10
 					) {
-						this.setVelocityX(Math.sign(diff) * Otis.SPEED);
+						this.setVelocityX(Math.sign(diff) * Otis.SPEED_SWEATER);
 					} else if (Math.abs(diff) > 20 && this.body.onFloor()) {
-						this.setVelocityX(Math.sign(diff) * (Otis.SPEED / 2));
+						this.setVelocityX(Math.sign(diff) * (Otis.SPEED_SWEATER / 2));
 					}
 
 					const jumpTile = this.scene.jumps.getTileAtWorldXY(

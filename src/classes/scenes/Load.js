@@ -69,6 +69,55 @@ export default class Load extends UpdatedScene {
 		);
 
 		this.load.image("menu.main", "scenes/title.png");
+
+		this.load.spritesheet(
+			"npc_cocoa_dude_left",
+			"sprites/NPCs/npc_cocoa_dude_left.png",
+			{ frameWidth: 32 }
+		);
+		this.load.spritesheet(
+			"npc_cocoa_dude_right",
+			"sprites/NPCs/npc_cocoa_dude_right.png",
+			{ frameWidth: 32 }
+		);
+		this.load.spritesheet(
+			"npc_cocoa_lady_right",
+			"sprites/NPCs/npc_cocoa_lady_right.png",
+			{ frameWidth: 32 }
+		);
+		this.load.spritesheet(
+			"npc_dancing_dude_left",
+			"sprites/NPCs/npc_dancing_dude_left.png",
+			{ frameWidth: 32 }
+		);
+		this.load.spritesheet(
+			"npc_dancing_dude_left",
+			"sprites/NPCs/npc_dancing_dude_left.png",
+			{ frameWidth: 32 }
+		);
+		this.load.spritesheet(
+			"npc_dancing_dude_right",
+			"sprites/NPCs/npc_dancing_dude_right.png",
+			{ frameWidth: 32 }
+		);
+		this.load.spritesheet(
+			"npc_dancing_lady_left",
+			"sprites/NPCs/npc_dancing_lady_left.png",
+			{ frameWidth: 32 }
+		);
+		this.load.spritesheet(
+			"npc_dancing_lady_right",
+			"sprites/NPCs/npc_dancing_lady_right.png",
+			{ frameWidth: 32 }
+		);
+		this.load.spritesheet(
+			"npc_idle_lady_left",
+			"sprites/NPCs/npc_idle_lady_left.png",
+			{ frameWidth: 16 }
+		);
+		this.load.spritesheet("npc_bouncer", "sprites/NPCs/npc_bouncer.png", {
+			frameWidth: 16
+		});
 	}
 
 	create() {

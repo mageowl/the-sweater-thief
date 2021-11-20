@@ -53,6 +53,14 @@ class Bouncer extends Main {
 	parallax = "town";
 	levels = {
 		prev: PlatformingB,
+		next: Party
+	};
+}
+class Party extends Main {
+	tilemap = "party";
+	parallax = "town";
+	levels = {
+		prev: Party,
 		next: null
 	};
 }
