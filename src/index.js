@@ -1,4 +1,6 @@
-import Main from "./classes/scenes/main.js";
+import { Woods, House, Town, Bridge } from "./classes/scenes/Levels.js";
+import Load from "./classes/scenes/Load.js";
+import Transition from "./classes/scenes/Transition.js";
 
 const game = new Phaser.Game({
 	type: Phaser.CANVAS,
@@ -22,6 +24,8 @@ const game = new Phaser.Game({
 		pixelArt: true,
 		antialias: false
 	},
-	scene: Main,
+	scene: [Load, House, Town, Woods, Bridge, Transition],
 	backgroundColor: "#db604c"
 });
+
+game.scene.start("Transition");

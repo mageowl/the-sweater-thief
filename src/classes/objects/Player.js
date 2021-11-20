@@ -95,5 +95,9 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
 			if (input.D) this.setFlipX(false);
 			else if (input.A) this.setFlipX(true);
 		}
+
+		if (this.x > this.scene.level.tilemap.widthInPixels) {
+			this.scene.nextLevel();
+		}
 	}
 }

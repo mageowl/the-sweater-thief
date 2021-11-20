@@ -1,8 +1,9 @@
 import UpdatedScene from "../template/scenes/UpdatedScene.js";
 
 export default class Otis extends Phaser.Physics.Arcade.Sprite {
-	static SPEED = 75;
+	static SPEED = 100;
 	static JUMP_HEIGHT = 200;
+	static currentLevel = "Woods";
 
 	hasSweater = false;
 	stun = 0;
