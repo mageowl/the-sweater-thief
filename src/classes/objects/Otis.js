@@ -3,10 +3,11 @@ import UpdatedScene from "../template/scenes/UpdatedScene.js";
 export default class Otis extends Phaser.Physics.Arcade.Sprite {
 	static SPEED = 100;
 	static JUMP_HEIGHT = 200;
-	static currentLevel = "Woods";
+	static currentLevel = null;
 
 	hasSweater = false;
 	stun = 0;
+	teleporting = false;
 
 	/**
 	 * Creates an instance of Otis.
@@ -33,7 +34,7 @@ export default class Otis extends Phaser.Physics.Arcade.Sprite {
 			this.setVelocityX(0);
 			this.play("otis.nosweater.stunned", true);
 			return;
-		} else {
+		} else if (!this.teleporting) {
 			if (!this.hasSweater) {
 				// Movement
 				const diff = this.player.x - this.x;
@@ -105,6 +106,23 @@ export default class Otis extends Phaser.Physics.Arcade.Sprite {
 					this.setTexture("otis");
 					this.player.setTexture("player");
 					this.stun = 60;
+				}
+
+				// Exit level
+				if (
+					this.scene.physics.overlap(this, this.shrines.start) &&
+					Math.abs(this.shrines.start.x - this.x) < 10
+				) {
+					this.teleporting = true;
+					this.setVelocity(0).play("otis.sweater.idle");
+					this.shrines.start
+						.play("shrine.summon", true)
+						.once("animationcomplete", () => {
+							this.currentLevel = new Otis.currentLevel().levels.prev;
+							this.shrines.start.setFrame(0);
+							this.scene.removeUpdate(this);
+							this.destroy();
+						});
 				}
 			}
 

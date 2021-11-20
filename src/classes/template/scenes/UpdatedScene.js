@@ -4,6 +4,9 @@ export default class UpdatedScene extends Phaser.Scene {
 	updateObj(object) {
 		this.#updateList.push(object);
 	}
+	removeUpdate(object) {
+		this.#updateList.splice(this.#updateList.indexOf(object), 1);
+	}
 
 	constructor() {
 		super(new.target.name);

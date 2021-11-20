@@ -1,6 +1,7 @@
+import Otis from "../objects/Otis.js";
 import Main from "./main.js";
 
-class House extends Main {
+export default class House extends Main {
 	tilemap = "house";
 	parallax = "town";
 	levels = {
@@ -32,4 +33,4 @@ class Bridge extends Main {
 	};
 }
 
-export default House;
+Otis.currentLevel = Woods;

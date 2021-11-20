@@ -42,7 +42,7 @@ export default class Main extends UpdatedScene {
 		this.entities.add(this.player);
 
 		// Otis
-		if (Otis.currentLevel === this.constructor.name) {
+		if (Otis.currentLevel.name === this.constructor.name) {
 			let otis;
 			setTimeout(() => {
 				otis = new Otis(
@@ -280,13 +280,25 @@ export default class Main extends UpdatedScene {
 				.setOrigin(0, 1)
 				.setScrollFactor(0.6, 1)
 				.setDepth(-5);
+			if (this.level.tilemap.heightInPixels > 176) {
+				this.add
+					.rectangle(
+						0,
+						0,
+						this.level.tilemap.widthInPixels,
+						this.level.tilemap.heightInPixels - 175,
+						0x271854
+					)
+					.setOrigin(0)
+					.setDepth(-3);
+			}
 		}
 	}
 
 	nextLevel() {
 		this.scene.pause(this.constructor.name);
-		if (Otis.currentLevel === this.constructor.name) {
-			Otis.currentLevel = this.levels.next.constructor.name;
+		if (Otis.currentLevel.name === this.constructor.name) {
+			Otis.currentLevel = this.levels.next;
 		}
 		Transition.right().then(() => {
 			this.scene
@@ -300,8 +312,8 @@ export default class Main extends UpdatedScene {
 
 	prevLevel() {
 		this.scene.pause(this.constructor.name);
-		if (Otis.currentLevel === this.constructor.name) {
-			Otis.currentLevel = this.levels.prev.constructor.name;
+		if (Otis.currentLevel.name === this.constructor.name) {
+			Otis.currentLevel = this.levels.prev;
 		}
 		Transition.left().then(() => {
 			this.scene
