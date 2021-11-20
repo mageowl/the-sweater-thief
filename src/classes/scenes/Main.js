@@ -93,8 +93,8 @@ export default class Main extends UpdatedScene {
 		});
 		this.anims.create({
 			key: "balloons",
-			frames: this.anims.generateFrameNumbers("shrine", {
-				frames: [1, 2, 3, 4, 5, 6, 7]
+			frames: this.anims.generateFrameNumbers("balloons", {
+				frames: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 			}),
 			frameRate: 10
 		});
