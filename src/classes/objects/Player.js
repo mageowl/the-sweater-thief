@@ -50,8 +50,8 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
 			const currentTile = this.scene.level.getTileAtWorldXY(
 				this.x,
 				this.y + this.height / 2 - 3
-			)?.index;
-			if (currentTile >= 314 && currentTile <= 317) {
+			);
+			if (currentTile?.properties?.hazard) {
 				// DIE!
 				this.play("player.death").once("animationcomplete", () => {
 					const respawn = this.spawn[this.hasSweater ? "start" : "end"];

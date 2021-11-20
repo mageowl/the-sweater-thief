@@ -34,7 +34,7 @@ export default class Otis extends Phaser.Physics.Arcade.Sprite {
 			this.setVelocityX(0);
 			this.play("otis.nosweater.stunned", true);
 			return;
-		} else if (!this.teleporting) {
+		} else {
 			if (!this.hasSweater) {
 				// Movement
 				const diff = this.player.x - this.x;
@@ -68,32 +68,52 @@ export default class Otis extends Phaser.Physics.Arcade.Sprite {
 					this.player.setTexture("player_no_sweater");
 				}
 			} else {
-				// Movement
-				const diff = this.shrines.start.x - this.x;
-				if (
-					Math.abs(diff) > 30 ||
-					Math.abs(this.shrines.start.y - this.y) < 10
-				) {
-					this.setVelocityX(Math.sign(diff) * Otis.SPEED);
-				} else if (Math.abs(diff) > 20) {
-					this.setVelocityX(Math.sign(diff) * (Otis.SPEED / 2));
-				}
+				if (!this.teleporting) {
+					// Movement
+					const diff = this.shrines.start.x - this.x;
+					if (
+						Math.abs(diff) > 30 ||
+						Math.abs(this.shrines.start.y - this.y) < 10
+					) {
+						this.setVelocityX(Math.sign(diff) * Otis.SPEED);
+					} else if (Math.abs(diff) > 20) {
+						this.setVelocityX(Math.sign(diff) * (Otis.SPEED / 2));
+					}
 
-				const jumpTile = this.scene.jumps.getTileAtWorldXY(
-					this.x,
-					this.y
-				)?.index;
-				if (
-					(((jumpTile === 1 || jumpTile === 3) &&
-						this.x < this.shrines.start.x) ||
-						((jumpTile === 2 || jumpTile === 4) &&
-							this.x > this.shrines.start.x)) &&
-					(jumpTile === 3 || jumpTile === 4
-						? this.shrines.start.y + 25 < this.y
-						: true) &&
-					this.body.onFloor()
-				) {
-					this.setVelocityY(-Otis.JUMP_HEIGHT);
+					const jumpTile = this.scene.jumps.getTileAtWorldXY(
+						this.x,
+						this.y
+					)?.index;
+					if (
+						(((jumpTile === 1 || jumpTile === 3) &&
+							this.x < this.shrines.start.x) ||
+							((jumpTile === 2 || jumpTile === 4) &&
+								this.x > this.shrines.start.x)) &&
+						(jumpTile === 3 || jumpTile === 4
+							? this.shrines.start.y + 25 < this.y
+							: true) &&
+						this.body.onFloor()
+					) {
+						this.setVelocityY(-Otis.JUMP_HEIGHT);
+					}
+
+					// Exit level
+					if (
+						this.scene.physics.overlap(this, this.shrines.start) &&
+						Math.abs(this.shrines.start.x - this.x) < 10
+					) {
+						this.teleporting = true;
+						this.setVelocity(0).play("otis.sweater.idle");
+						this.shrines.start
+							.play("shrine.summon", true)
+							.once("animationcomplete", () => {
+								this.shrines.start.setFrame(0);
+								if (!this.teleporting) return;
+								this.currentLevel = new Otis.currentLevel().levels.prev;
+								this.scene.removeUpdate(this);
+								this.destroy();
+							});
+					}
 				}
 
 				// Steal Sweater
@@ -106,36 +126,20 @@ export default class Otis extends Phaser.Physics.Arcade.Sprite {
 					this.setTexture("otis");
 					this.player.setTexture("player");
 					this.stun = 60;
-				}
-
-				// Exit level
-				if (
-					this.scene.physics.overlap(this, this.shrines.start) &&
-					Math.abs(this.shrines.start.x - this.x) < 10
-				) {
-					this.teleporting = true;
-					this.setVelocity(0).play("otis.sweater.idle");
-					this.shrines.start
-						.play("shrine.summon", true)
-						.once("animationcomplete", () => {
-							this.currentLevel = new Otis.currentLevel().levels.prev;
-							this.shrines.start.setFrame(0);
-							this.scene.removeUpdate(this);
-							this.destroy();
-						});
+					this.teleporting = false;
 				}
 			}
 
 			// Animation
 			const xDir = Math.sign(this.body.velocity.x);
 
-			if (this.body.onFloor()) {
+			if (this.body.onFloor() && !this.teleporting) {
 				if (xDir !== 0)
 					this.play(
 						`otis.${this.hasSweater ? "sweater" : "nosweater"}.run`,
 						true
 					);
-			} else {
+			} else if (!this.teleporting) {
 				if (this.body.velocity.y < 0)
 					this.play(
 						`otis.${this.hasSweater ? "sweater" : "nosweater"}.jump.up`

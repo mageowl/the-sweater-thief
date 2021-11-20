@@ -266,6 +266,11 @@
                          "value":false
                         }, 
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -276,6 +281,11 @@
                  "properties":[
                         {
                          "name":"collision",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
+                         "name":"hazard",
                          "type":"bool",
                          "value":false
                         }, 
@@ -294,6 +304,11 @@
                          "value":false
                         }, 
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -304,6 +319,11 @@
                  "properties":[
                         {
                          "name":"collision",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
+                         "name":"hazard",
                          "type":"bool",
                          "value":false
                         }, 
@@ -322,6 +342,11 @@
                          "value":false
                         }, 
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -332,6 +357,11 @@
                  "properties":[
                         {
                          "name":"collision",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
+                         "name":"hazard",
                          "type":"bool",
                          "value":false
                         }, 
@@ -350,6 +380,11 @@
                          "value":false
                         }, 
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -364,6 +399,11 @@
                          "value":false
                         }, 
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -372,6 +412,11 @@
                 {
                  "id":8,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -382,6 +427,11 @@
                  "id":9,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -390,6 +440,11 @@
                 {
                  "id":10,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -400,6 +455,11 @@
                  "id":11,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -408,6 +468,11 @@
                 {
                  "id":12,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -418,6 +483,11 @@
                  "id":13,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -426,6 +496,11 @@
                 {
                  "id":14,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -436,6 +511,11 @@
                  "id":15,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -444,6 +524,11 @@
                 {
                  "id":16,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -454,6 +539,11 @@
                  "id":17,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -462,6 +552,11 @@
                 {
                  "id":18,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -472,6 +567,11 @@
                  "id":19,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -480,6 +580,11 @@
                 {
                  "id":20,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -490,6 +595,11 @@
                  "id":21,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -498,6 +608,11 @@
                 {
                  "id":22,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -508,6 +623,11 @@
                  "id":23,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -516,6 +636,11 @@
                 {
                  "id":24,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -526,6 +651,11 @@
                  "id":25,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -534,6 +664,11 @@
                 {
                  "id":26,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -544,6 +679,11 @@
                  "id":27,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -552,6 +692,11 @@
                 {
                  "id":28,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -562,6 +707,11 @@
                  "id":29,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -570,6 +720,11 @@
                 {
                  "id":30,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -580,6 +735,11 @@
                  "id":31,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -588,6 +748,11 @@
                 {
                  "id":32,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -598,6 +763,11 @@
                  "id":33,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -606,6 +776,11 @@
                 {
                  "id":34,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -616,6 +791,11 @@
                  "id":35,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -624,6 +804,11 @@
                 {
                  "id":36,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -634,6 +819,11 @@
                  "id":37,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -642,6 +832,11 @@
                 {
                  "id":38,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -652,6 +847,11 @@
                  "id":39,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -661,6 +861,11 @@
                  "id":40,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -669,6 +874,11 @@
                 {
                  "id":41,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -846,6 +1056,11 @@
                          "value":false
                         }, 
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -856,6 +1071,11 @@
                  "properties":[
                         {
                          "name":"collision",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
+                         "name":"hazard",
                          "type":"bool",
                          "value":false
                         }, 
@@ -874,6 +1094,11 @@
                          "value":false
                         }, 
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -884,6 +1109,11 @@
                  "properties":[
                         {
                          "name":"collision",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
+                         "name":"hazard",
                          "type":"bool",
                          "value":false
                         }, 
@@ -902,6 +1132,11 @@
                          "value":false
                         }, 
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -912,6 +1147,11 @@
                  "properties":[
                         {
                          "name":"collision",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
+                         "name":"hazard",
                          "type":"bool",
                          "value":false
                         }, 
@@ -930,6 +1170,11 @@
                          "value":false
                         }, 
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -944,6 +1189,11 @@
                          "value":false
                         }, 
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -952,6 +1202,11 @@
                 {
                  "id":68,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -962,6 +1217,11 @@
                  "id":69,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -970,6 +1230,11 @@
                 {
                  "id":70,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -980,6 +1245,11 @@
                  "id":71,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -988,6 +1258,11 @@
                 {
                  "id":72,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -998,6 +1273,11 @@
                  "id":73,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -1006,6 +1286,11 @@
                 {
                  "id":74,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -1016,6 +1301,11 @@
                  "id":75,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -1024,6 +1314,11 @@
                 {
                  "id":76,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -1034,6 +1329,11 @@
                  "id":77,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -1042,6 +1342,11 @@
                 {
                  "id":78,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -1052,6 +1357,11 @@
                  "id":79,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -1060,6 +1370,11 @@
                 {
                  "id":80,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -1070,6 +1385,11 @@
                  "id":81,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -1078,6 +1398,11 @@
                 {
                  "id":82,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -1088,6 +1413,11 @@
                  "id":83,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -1096,6 +1426,11 @@
                 {
                  "id":84,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -1106,6 +1441,11 @@
                  "id":85,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -1114,6 +1454,11 @@
                 {
                  "id":86,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -1124,6 +1469,11 @@
                  "id":87,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -1132,6 +1482,11 @@
                 {
                  "id":88,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -1142,6 +1497,11 @@
                  "id":89,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -1150,6 +1510,11 @@
                 {
                  "id":90,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -1160,6 +1525,11 @@
                  "id":91,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -1168,6 +1538,11 @@
                 {
                  "id":92,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -1178,6 +1553,11 @@
                  "id":93,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -1186,6 +1566,11 @@
                 {
                  "id":94,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -1196,6 +1581,11 @@
                  "id":95,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -1204,6 +1594,11 @@
                 {
                  "id":96,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -1214,6 +1609,11 @@
                  "id":97,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -1222,6 +1622,11 @@
                 {
                  "id":98,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -1232,6 +1637,11 @@
                  "id":99,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -1241,6 +1651,11 @@
                  "id":100,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -1249,6 +1664,11 @@
                 {
                  "id":101,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -1426,6 +1846,11 @@
                          "value":true
                         }, 
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -1438,6 +1863,11 @@
                          "name":"collision",
                          "type":"bool",
                          "value":true
+                        }, 
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
                         }, 
                         {
                          "name":"oneWay",
@@ -1454,6 +1884,11 @@
                          "value":true
                         }, 
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -1468,6 +1903,11 @@
                          "value":true
                         }, 
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -1478,6 +1918,11 @@
                  "properties":[
                         {
                          "name":"collision",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
+                         "name":"hazard",
                          "type":"bool",
                          "value":false
                         }, 
@@ -1496,6 +1941,11 @@
                          "value":true
                         }, 
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -1506,6 +1956,11 @@
                  "properties":[
                         {
                          "name":"collision",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
+                         "name":"hazard",
                          "type":"bool",
                          "value":false
                         }, 
@@ -1524,6 +1979,11 @@
                          "value":false
                         }, 
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -1532,6 +1992,11 @@
                 {
                  "id":128,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -1542,6 +2007,11 @@
                  "id":129,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -1550,6 +2020,11 @@
                 {
                  "id":130,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -1560,6 +2035,11 @@
                  "id":131,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -1568,6 +2048,11 @@
                 {
                  "id":132,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -1578,6 +2063,11 @@
                  "id":133,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -1586,6 +2076,11 @@
                 {
                  "id":134,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -1596,6 +2091,11 @@
                  "id":135,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -1604,6 +2104,11 @@
                 {
                  "id":136,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -1614,6 +2119,11 @@
                  "id":137,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -1622,6 +2132,11 @@
                 {
                  "id":138,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -1632,6 +2147,11 @@
                  "id":139,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -1640,6 +2160,11 @@
                 {
                  "id":140,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -1650,6 +2175,11 @@
                  "id":141,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -1658,6 +2188,11 @@
                 {
                  "id":142,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -1668,6 +2203,11 @@
                  "id":143,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -1676,6 +2216,11 @@
                 {
                  "id":144,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -1686,6 +2231,11 @@
                  "id":145,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -1694,6 +2244,11 @@
                 {
                  "id":146,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -1704,6 +2259,11 @@
                  "id":147,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -1712,6 +2272,11 @@
                 {
                  "id":148,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -1722,6 +2287,11 @@
                  "id":149,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -1730,6 +2300,11 @@
                 {
                  "id":150,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -1740,6 +2315,11 @@
                  "id":151,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -1748,6 +2328,11 @@
                 {
                  "id":152,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -1758,6 +2343,11 @@
                  "id":153,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -1766,6 +2356,11 @@
                 {
                  "id":154,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -1776,6 +2371,11 @@
                  "id":155,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -1784,6 +2384,11 @@
                 {
                  "id":156,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -1794,6 +2399,11 @@
                  "id":157,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -1802,6 +2412,11 @@
                 {
                  "id":158,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -1812,6 +2427,11 @@
                  "id":159,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -1821,6 +2441,11 @@
                  "id":160,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -1829,6 +2454,11 @@
                 {
                  "id":161,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -2006,6 +2636,11 @@
                          "value":true
                         }, 
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -2018,6 +2653,11 @@
                          "name":"collision",
                          "type":"bool",
                          "value":true
+                        }, 
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
                         }, 
                         {
                          "name":"oneWay",
@@ -2034,6 +2674,11 @@
                          "value":true
                         }, 
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -2044,6 +2689,11 @@
                  "properties":[
                         {
                          "name":"collision",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
+                         "name":"hazard",
                          "type":"bool",
                          "value":false
                         }, 
@@ -2062,6 +2712,11 @@
                          "value":false
                         }, 
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -2072,6 +2727,11 @@
                  "properties":[
                         {
                          "name":"collision",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
+                         "name":"hazard",
                          "type":"bool",
                          "value":false
                         }, 
@@ -2090,6 +2750,11 @@
                          "value":false
                         }, 
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -2104,6 +2769,11 @@
                          "value":false
                         }, 
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -2112,6 +2782,11 @@
                 {
                  "id":188,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -2122,6 +2797,11 @@
                  "id":189,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -2130,6 +2810,11 @@
                 {
                  "id":190,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -2140,6 +2825,11 @@
                  "id":191,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -2148,6 +2838,11 @@
                 {
                  "id":192,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -2158,6 +2853,11 @@
                  "id":193,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -2166,6 +2866,11 @@
                 {
                  "id":194,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -2176,6 +2881,11 @@
                  "id":195,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -2184,6 +2894,11 @@
                 {
                  "id":196,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -2194,6 +2909,11 @@
                  "id":197,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -2202,6 +2922,11 @@
                 {
                  "id":198,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -2212,6 +2937,11 @@
                  "id":199,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -2220,6 +2950,11 @@
                 {
                  "id":200,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -2230,6 +2965,11 @@
                  "id":201,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -2238,6 +2978,11 @@
                 {
                  "id":202,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -2248,6 +2993,11 @@
                  "id":203,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -2256,6 +3006,11 @@
                 {
                  "id":204,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -2266,6 +3021,11 @@
                  "id":205,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -2274,6 +3034,11 @@
                 {
                  "id":206,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -2284,6 +3049,11 @@
                  "id":207,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -2292,6 +3062,11 @@
                 {
                  "id":208,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -2302,6 +3077,11 @@
                  "id":209,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -2310,6 +3090,11 @@
                 {
                  "id":210,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -2320,6 +3105,11 @@
                  "id":211,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -2328,6 +3118,11 @@
                 {
                  "id":212,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -2338,6 +3133,11 @@
                  "id":213,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -2346,6 +3146,11 @@
                 {
                  "id":214,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -2356,6 +3161,11 @@
                  "id":215,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -2364,6 +3174,11 @@
                 {
                  "id":216,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -2374,6 +3189,11 @@
                  "id":217,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -2382,6 +3202,11 @@
                 {
                  "id":218,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -2392,6 +3217,11 @@
                  "id":219,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -2401,6 +3231,11 @@
                  "id":220,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -2409,6 +3244,11 @@
                 {
                  "id":221,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -2586,6 +3426,11 @@
                          "value":true
                         }, 
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -2598,6 +3443,11 @@
                          "name":"collision",
                          "type":"bool",
                          "value":true
+                        }, 
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
                         }, 
                         {
                          "name":"oneWay",
@@ -2614,6 +3464,11 @@
                          "value":true
                         }, 
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -2624,6 +3479,11 @@
                  "properties":[
                         {
                          "name":"collision",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
+                         "name":"hazard",
                          "type":"bool",
                          "value":false
                         }, 
@@ -2642,6 +3502,11 @@
                          "value":false
                         }, 
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -2652,6 +3517,11 @@
                  "properties":[
                         {
                          "name":"collision",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
+                         "name":"hazard",
                          "type":"bool",
                          "value":false
                         }, 
@@ -2670,6 +3540,11 @@
                          "value":false
                         }, 
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -2684,6 +3559,11 @@
                          "value":false
                         }, 
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -2692,6 +3572,11 @@
                 {
                  "id":248,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -2702,6 +3587,11 @@
                  "id":249,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":true
@@ -2710,6 +3600,11 @@
                 {
                  "id":250,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -2720,6 +3615,11 @@
                  "id":251,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":true
@@ -2728,6 +3628,11 @@
                 {
                  "id":252,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -2738,6 +3643,11 @@
                  "id":253,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -2746,6 +3656,11 @@
                 {
                  "id":254,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -2756,6 +3671,11 @@
                  "id":255,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -2764,6 +3684,11 @@
                 {
                  "id":256,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -2774,6 +3699,11 @@
                  "id":257,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -2782,6 +3712,11 @@
                 {
                  "id":258,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -2792,6 +3727,11 @@
                  "id":259,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -2800,6 +3740,11 @@
                 {
                  "id":260,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -2810,6 +3755,11 @@
                  "id":261,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -2818,6 +3768,11 @@
                 {
                  "id":262,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -2828,6 +3783,11 @@
                  "id":263,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -2836,6 +3796,11 @@
                 {
                  "id":264,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -2846,6 +3811,11 @@
                  "id":265,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -2854,6 +3824,11 @@
                 {
                  "id":266,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -2864,6 +3839,11 @@
                  "id":267,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -2872,6 +3852,11 @@
                 {
                  "id":268,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -2882,6 +3867,11 @@
                  "id":269,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -2890,6 +3880,11 @@
                 {
                  "id":270,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -2900,6 +3895,11 @@
                  "id":271,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -2908,6 +3908,11 @@
                 {
                  "id":272,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -2918,6 +3923,11 @@
                  "id":273,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -2926,6 +3936,11 @@
                 {
                  "id":274,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -2936,6 +3951,11 @@
                  "id":275,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -2944,6 +3964,11 @@
                 {
                  "id":276,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -2954,6 +3979,11 @@
                  "id":277,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -2962,6 +3992,11 @@
                 {
                  "id":278,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -2972,6 +4007,11 @@
                  "id":279,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -2981,6 +4021,11 @@
                  "id":280,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -2989,6 +4034,11 @@
                 {
                  "id":281,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -3166,6 +4216,11 @@
                          "value":false
                         }, 
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -3176,6 +4231,11 @@
                  "properties":[
                         {
                          "name":"collision",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
+                         "name":"hazard",
                          "type":"bool",
                          "value":false
                         }, 
@@ -3194,6 +4254,11 @@
                          "value":false
                         }, 
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -3204,6 +4269,11 @@
                  "properties":[
                         {
                          "name":"collision",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
+                         "name":"hazard",
                          "type":"bool",
                          "value":false
                         }, 
@@ -3222,6 +4292,11 @@
                          "value":false
                         }, 
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -3232,6 +4307,11 @@
                  "properties":[
                         {
                          "name":"collision",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
+                         "name":"hazard",
                          "type":"bool",
                          "value":false
                         }, 
@@ -3250,6 +4330,11 @@
                          "value":false
                         }, 
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -3264,6 +4349,11 @@
                          "value":false
                         }, 
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -3272,6 +4362,11 @@
                 {
                  "id":308,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -3282,6 +4377,11 @@
                  "id":309,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -3290,6 +4390,11 @@
                 {
                  "id":310,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":true
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -3300,6 +4405,11 @@
                  "id":311,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -3308,6 +4418,11 @@
                 {
                  "id":312,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":true
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -3318,6 +4433,11 @@
                  "id":313,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -3326,6 +4446,11 @@
                 {
                  "id":314,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -3336,6 +4461,11 @@
                  "id":315,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -3344,6 +4474,11 @@
                 {
                  "id":316,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -3354,6 +4489,11 @@
                  "id":317,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -3362,6 +4502,11 @@
                 {
                  "id":318,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -3372,6 +4517,11 @@
                  "id":319,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -3380,6 +4530,11 @@
                 {
                  "id":320,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -3390,6 +4545,11 @@
                  "id":321,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -3398,6 +4558,11 @@
                 {
                  "id":322,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -3408,6 +4573,11 @@
                  "id":323,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -3416,6 +4586,11 @@
                 {
                  "id":324,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -3426,6 +4601,11 @@
                  "id":325,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -3434,6 +4614,11 @@
                 {
                  "id":326,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -3444,6 +4629,11 @@
                  "id":327,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -3452,6 +4642,11 @@
                 {
                  "id":328,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -3462,6 +4657,11 @@
                  "id":329,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -3470,6 +4670,11 @@
                 {
                  "id":330,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -3480,6 +4685,11 @@
                  "id":331,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -3488,6 +4698,11 @@
                 {
                  "id":332,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -3498,6 +4713,11 @@
                  "id":333,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -3506,6 +4726,11 @@
                 {
                  "id":334,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -3516,6 +4741,11 @@
                  "id":335,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -3524,6 +4754,11 @@
                 {
                  "id":336,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -3534,6 +4769,11 @@
                  "id":337,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -3542,6 +4782,11 @@
                 {
                  "id":338,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -3552,6 +4797,11 @@
                  "id":339,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -3561,6 +4811,11 @@
                  "id":340,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -3569,6 +4824,11 @@
                 {
                  "id":341,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -3746,6 +5006,11 @@
                          "value":false
                         }, 
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -3756,6 +5021,11 @@
                  "properties":[
                         {
                          "name":"collision",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
+                         "name":"hazard",
                          "type":"bool",
                          "value":false
                         }, 
@@ -3774,6 +5044,11 @@
                          "value":false
                         }, 
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -3784,6 +5059,11 @@
                  "properties":[
                         {
                          "name":"collision",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
+                         "name":"hazard",
                          "type":"bool",
                          "value":false
                         }, 
@@ -3802,6 +5082,11 @@
                          "value":false
                         }, 
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -3812,6 +5097,11 @@
                  "properties":[
                         {
                          "name":"collision",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
+                         "name":"hazard",
                          "type":"bool",
                          "value":false
                         }, 
@@ -3830,6 +5120,11 @@
                          "value":false
                         }, 
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -3844,6 +5139,11 @@
                          "value":false
                         }, 
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -3852,6 +5152,11 @@
                 {
                  "id":368,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -3862,6 +5167,11 @@
                  "id":369,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -3870,6 +5180,11 @@
                 {
                  "id":370,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -3880,6 +5195,11 @@
                  "id":371,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -3888,6 +5208,11 @@
                 {
                  "id":372,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -3898,6 +5223,11 @@
                  "id":373,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -3906,6 +5236,11 @@
                 {
                  "id":374,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -3916,6 +5251,11 @@
                  "id":375,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -3924,6 +5264,11 @@
                 {
                  "id":376,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -3934,6 +5279,11 @@
                  "id":377,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -3942,6 +5292,11 @@
                 {
                  "id":378,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -3952,6 +5307,11 @@
                  "id":379,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -3960,6 +5320,11 @@
                 {
                  "id":380,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -3970,6 +5335,11 @@
                  "id":381,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -3978,6 +5348,11 @@
                 {
                  "id":382,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -3988,6 +5363,11 @@
                  "id":383,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -3996,6 +5376,11 @@
                 {
                  "id":384,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -4006,6 +5391,11 @@
                  "id":385,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -4014,6 +5404,11 @@
                 {
                  "id":386,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -4024,6 +5419,11 @@
                  "id":387,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -4032,6 +5432,11 @@
                 {
                  "id":388,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -4042,6 +5447,11 @@
                  "id":389,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -4050,6 +5460,11 @@
                 {
                  "id":390,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -4060,6 +5475,11 @@
                  "id":391,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -4068,6 +5488,11 @@
                 {
                  "id":392,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -4078,6 +5503,11 @@
                  "id":393,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -4086,6 +5516,11 @@
                 {
                  "id":394,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -4096,6 +5531,11 @@
                  "id":395,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -4104,6 +5544,11 @@
                 {
                  "id":396,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -4114,6 +5559,11 @@
                  "id":397,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -4122,6 +5572,11 @@
                 {
                  "id":398,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -4132,6 +5587,11 @@
                  "id":399,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -4141,6 +5601,11 @@
                  "id":400,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -4149,6 +5614,11 @@
                 {
                  "id":401,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -4326,6 +5796,11 @@
                          "value":false
                         }, 
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -4338,6 +5813,11 @@
                          "name":"collision",
                          "type":"bool",
                          "value":true
+                        }, 
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
                         }, 
                         {
                          "name":"oneWay",
@@ -4354,6 +5834,11 @@
                          "value":true
                         }, 
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -4366,6 +5851,11 @@
                          "name":"collision",
                          "type":"bool",
                          "value":true
+                        }, 
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
                         }, 
                         {
                          "name":"oneWay",
@@ -4382,6 +5872,11 @@
                          "value":true
                         }, 
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -4394,6 +5889,11 @@
                          "name":"collision",
                          "type":"bool",
                          "value":true
+                        }, 
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
                         }, 
                         {
                          "name":"oneWay",
@@ -4410,6 +5910,11 @@
                          "value":true
                         }, 
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -4424,6 +5929,11 @@
                          "value":false
                         }, 
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -4432,6 +5942,11 @@
                 {
                  "id":428,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -4442,6 +5957,11 @@
                  "id":429,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -4450,6 +5970,11 @@
                 {
                  "id":430,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -4460,6 +5985,11 @@
                  "id":431,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -4468,6 +5998,11 @@
                 {
                  "id":432,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -4478,6 +6013,11 @@
                  "id":433,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -4486,6 +6026,11 @@
                 {
                  "id":434,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -4496,6 +6041,11 @@
                  "id":435,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -4504,6 +6054,11 @@
                 {
                  "id":436,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -4514,6 +6069,11 @@
                  "id":437,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -4522,6 +6082,11 @@
                 {
                  "id":438,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -4532,6 +6097,11 @@
                  "id":439,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -4540,6 +6110,11 @@
                 {
                  "id":440,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -4550,6 +6125,11 @@
                  "id":441,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -4558,6 +6138,11 @@
                 {
                  "id":442,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -4568,6 +6153,11 @@
                  "id":443,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -4576,6 +6166,11 @@
                 {
                  "id":444,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -4586,6 +6181,11 @@
                  "id":445,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -4594,6 +6194,11 @@
                 {
                  "id":446,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -4604,6 +6209,11 @@
                  "id":447,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -4612,6 +6222,11 @@
                 {
                  "id":448,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -4622,6 +6237,11 @@
                  "id":449,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -4630,6 +6250,11 @@
                 {
                  "id":450,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -4640,6 +6265,11 @@
                  "id":451,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -4648,6 +6278,11 @@
                 {
                  "id":452,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -4658,6 +6293,11 @@
                  "id":453,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -4666,6 +6306,11 @@
                 {
                  "id":454,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -4676,6 +6321,11 @@
                  "id":455,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -4684,6 +6334,11 @@
                 {
                  "id":456,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -4694,6 +6349,11 @@
                  "id":457,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -4702,6 +6362,11 @@
                 {
                  "id":458,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -4712,6 +6377,11 @@
                  "id":459,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -4721,6 +6391,11 @@
                  "id":460,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -4729,6 +6404,11 @@
                 {
                  "id":461,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -4906,6 +6586,11 @@
                          "value":false
                         }, 
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -4916,6 +6601,11 @@
                  "properties":[
                         {
                          "name":"collision",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
+                         "name":"hazard",
                          "type":"bool",
                          "value":false
                         }, 
@@ -4934,6 +6624,11 @@
                          "value":false
                         }, 
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -4944,6 +6639,11 @@
                  "properties":[
                         {
                          "name":"collision",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
+                         "name":"hazard",
                          "type":"bool",
                          "value":false
                         }, 
@@ -4962,6 +6662,11 @@
                          "value":false
                         }, 
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -4972,6 +6677,11 @@
                  "properties":[
                         {
                          "name":"collision",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
+                         "name":"hazard",
                          "type":"bool",
                          "value":false
                         }, 
@@ -4990,6 +6700,11 @@
                          "value":false
                         }, 
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -5004,6 +6719,11 @@
                          "value":false
                         }, 
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -5012,6 +6732,11 @@
                 {
                  "id":488,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -5022,6 +6747,11 @@
                  "id":489,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -5030,6 +6760,11 @@
                 {
                  "id":490,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -5040,6 +6775,11 @@
                  "id":491,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -5048,6 +6788,11 @@
                 {
                  "id":492,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -5058,6 +6803,11 @@
                  "id":493,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -5066,6 +6816,11 @@
                 {
                  "id":494,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -5076,6 +6831,11 @@
                  "id":495,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -5084,6 +6844,11 @@
                 {
                  "id":496,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -5094,6 +6859,11 @@
                  "id":497,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -5102,6 +6872,11 @@
                 {
                  "id":498,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -5112,6 +6887,11 @@
                  "id":499,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -5120,6 +6900,11 @@
                 {
                  "id":500,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -5130,6 +6915,11 @@
                  "id":501,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -5138,6 +6928,11 @@
                 {
                  "id":502,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -5148,6 +6943,11 @@
                  "id":503,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -5156,6 +6956,11 @@
                 {
                  "id":504,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -5166,6 +6971,11 @@
                  "id":505,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -5174,6 +6984,11 @@
                 {
                  "id":506,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -5184,6 +6999,11 @@
                  "id":507,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -5192,6 +7012,11 @@
                 {
                  "id":508,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -5202,6 +7027,11 @@
                  "id":509,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -5210,6 +7040,11 @@
                 {
                  "id":510,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -5220,6 +7055,11 @@
                  "id":511,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -5228,6 +7068,11 @@
                 {
                  "id":512,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -5238,6 +7083,11 @@
                  "id":513,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -5246,6 +7096,11 @@
                 {
                  "id":514,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -5256,6 +7111,11 @@
                  "id":515,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -5264,6 +7124,11 @@
                 {
                  "id":516,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -5274,6 +7139,11 @@
                  "id":517,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -5282,6 +7152,11 @@
                 {
                  "id":518,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -5292,6 +7167,11 @@
                  "id":519,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -5301,6 +7181,11 @@
                  "id":520,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -5309,6 +7194,11 @@
                 {
                  "id":521,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -5486,6 +7376,11 @@
                          "value":false
                         }, 
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -5498,6 +7393,11 @@
                          "name":"collision",
                          "type":"bool",
                          "value":false
+                        }, 
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":true
                         }, 
                         {
                          "name":"oneWay",
@@ -5514,6 +7414,11 @@
                          "value":false
                         }, 
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -5524,6 +7429,11 @@
                  "properties":[
                         {
                          "name":"collision",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
+                         "name":"hazard",
                          "type":"bool",
                          "value":false
                         }, 
@@ -5542,6 +7452,11 @@
                          "value":false
                         }, 
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -5552,6 +7467,11 @@
                  "properties":[
                         {
                          "name":"collision",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
+                         "name":"hazard",
                          "type":"bool",
                          "value":false
                         }, 
@@ -5570,6 +7490,11 @@
                          "value":false
                         }, 
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -5584,6 +7509,11 @@
                          "value":false
                         }, 
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -5592,6 +7522,11 @@
                 {
                  "id":548,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -5602,6 +7537,11 @@
                  "id":549,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -5610,6 +7550,11 @@
                 {
                  "id":550,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -5620,6 +7565,11 @@
                  "id":551,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -5628,6 +7578,11 @@
                 {
                  "id":552,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -5638,6 +7593,11 @@
                  "id":553,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -5646,6 +7606,11 @@
                 {
                  "id":554,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -5656,6 +7621,11 @@
                  "id":555,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -5664,6 +7634,11 @@
                 {
                  "id":556,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -5674,6 +7649,11 @@
                  "id":557,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -5682,6 +7662,11 @@
                 {
                  "id":558,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -5692,6 +7677,11 @@
                  "id":559,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -5700,6 +7690,11 @@
                 {
                  "id":560,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -5710,6 +7705,11 @@
                  "id":561,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -5718,6 +7718,11 @@
                 {
                  "id":562,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -5728,6 +7733,11 @@
                  "id":563,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -5736,6 +7746,11 @@
                 {
                  "id":564,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -5746,6 +7761,11 @@
                  "id":565,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -5754,6 +7774,11 @@
                 {
                  "id":566,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -5764,6 +7789,11 @@
                  "id":567,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -5772,6 +7802,11 @@
                 {
                  "id":568,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -5782,6 +7817,11 @@
                  "id":569,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -5790,6 +7830,11 @@
                 {
                  "id":570,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -5800,6 +7845,11 @@
                  "id":571,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -5808,6 +7858,11 @@
                 {
                  "id":572,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -5818,6 +7873,11 @@
                  "id":573,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -5826,6 +7886,11 @@
                 {
                  "id":574,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -5836,6 +7901,11 @@
                  "id":575,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -5844,6 +7914,11 @@
                 {
                  "id":576,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -5854,6 +7929,11 @@
                  "id":577,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -5862,6 +7942,11 @@
                 {
                  "id":578,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -5872,6 +7957,11 @@
                  "id":579,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -5881,6 +7971,11 @@
                  "id":580,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -5889,6 +7984,11 @@
                 {
                  "id":581,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -6066,6 +8166,11 @@
                          "value":false
                         }, 
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -6076,6 +8181,11 @@
                  "properties":[
                         {
                          "name":"collision",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
+                         "name":"hazard",
                          "type":"bool",
                          "value":false
                         }, 
@@ -6094,6 +8204,11 @@
                          "value":false
                         }, 
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -6104,6 +8219,11 @@
                  "properties":[
                         {
                          "name":"collision",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
+                         "name":"hazard",
                          "type":"bool",
                          "value":false
                         }, 
@@ -6122,6 +8242,11 @@
                          "value":false
                         }, 
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -6132,6 +8257,11 @@
                  "properties":[
                         {
                          "name":"collision",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
+                         "name":"hazard",
                          "type":"bool",
                          "value":false
                         }, 
@@ -6150,6 +8280,11 @@
                          "value":false
                         }, 
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -6164,6 +8299,11 @@
                          "value":false
                         }, 
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -6172,6 +8312,11 @@
                 {
                  "id":608,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -6182,6 +8327,11 @@
                  "id":609,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -6190,6 +8340,11 @@
                 {
                  "id":610,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -6200,6 +8355,11 @@
                  "id":611,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -6208,6 +8368,11 @@
                 {
                  "id":612,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -6218,6 +8383,11 @@
                  "id":613,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -6226,6 +8396,11 @@
                 {
                  "id":614,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -6236,6 +8411,11 @@
                  "id":615,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -6244,6 +8424,11 @@
                 {
                  "id":616,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -6254,6 +8439,11 @@
                  "id":617,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -6262,6 +8452,11 @@
                 {
                  "id":618,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -6272,6 +8467,11 @@
                  "id":619,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -6280,6 +8480,11 @@
                 {
                  "id":620,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -6290,6 +8495,11 @@
                  "id":621,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -6298,6 +8508,11 @@
                 {
                  "id":622,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -6308,6 +8523,11 @@
                  "id":623,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -6316,6 +8536,11 @@
                 {
                  "id":624,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -6326,6 +8551,11 @@
                  "id":625,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -6334,6 +8564,11 @@
                 {
                  "id":626,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -6344,6 +8579,11 @@
                  "id":627,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -6352,6 +8592,11 @@
                 {
                  "id":628,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -6362,6 +8607,11 @@
                  "id":629,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -6370,6 +8620,11 @@
                 {
                  "id":630,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -6380,6 +8635,11 @@
                  "id":631,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -6388,6 +8648,11 @@
                 {
                  "id":632,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -6398,6 +8663,11 @@
                  "id":633,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -6406,6 +8676,11 @@
                 {
                  "id":634,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -6416,6 +8691,11 @@
                  "id":635,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -6424,6 +8704,11 @@
                 {
                  "id":636,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -6434,6 +8719,11 @@
                  "id":637,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -6442,6 +8732,11 @@
                 {
                  "id":638,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
@@ -6452,6 +8747,11 @@
                  "id":639,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -6461,6 +8761,11 @@
                  "id":640,
                  "properties":[
                         {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"oneWay",
                          "type":"bool",
                          "value":false
@@ -6469,6 +8774,11 @@
                 {
                  "id":641,
                  "properties":[
+                        {
+                         "name":"hazard",
+                         "type":"bool",
+                         "value":false
+                        }, 
                         {
                          "name":"oneWay",
                          "type":"bool",
