@@ -26,6 +26,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
 
 		this.setSize(12, 23).setOffset(2, 9);
 		this.spawn = spawnPoints;
+		if (side === "end") this.setFlipX(true);
 	}
 
 	update() {
@@ -96,8 +97,12 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
 			else if (input.A) this.setFlipX(true);
 		}
 
+		// Change level
 		if (this.x > this.scene.level.tilemap.widthInPixels) {
 			this.scene.nextLevel();
+		}
+		if (this.x < 0) {
+			this.scene.prevLevel();
 		}
 	}
 }

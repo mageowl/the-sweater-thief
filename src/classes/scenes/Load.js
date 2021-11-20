@@ -70,6 +70,6 @@ export default class Load extends UpdatedScene {
 	}
 
 	create() {
-		this.scene.start("House");
+		this.scene.start("House", { side: "start" });
 	}
 }

@@ -29,34 +29,78 @@ export default class Transition extends UpdatedScene {
 	static right() {
 		return new Promise((resolve) => {
 			this.instance.blocks.forEach((block, i) => {
-				block.setSize(1, 1);
 				this.instance.tweens.add({
 					targets: block,
 					delay: (i % 20) * 50,
 					duration: 100,
 					scale: 48,
 					x: block.x - 24,
-					y: block.y - 24
+					y: block.y - 24,
+					onStart() {
+						block.setSize(1, 1);
+					},
+					onComplete() {
+						if (i === 219) {
+							resolve();
+							setTimeout(() => {
+								this.instance.blocks.forEach((block, i) => {
+									this.instance.tweens.add({
+										targets: block,
+										delay: (i % 20) * 50,
+										duration: 100,
+										scale: 1,
+										x: block.x + 24,
+										y: block.y + 24,
+										onComplete() {
+											block.setSize(0, 0);
+										}
+									});
+								});
+							}, 100);
+						}
+					},
+					callbackScope: this
 				});
 			});
-			setTimeout(() => {
-				resolve();
-				setTimeout(() => {
-					this.instance.blocks.forEach((block, i) => {
-						this.instance.tweens.add({
-							targets: block,
-							delay: (i % 20) * 50,
-							duration: 100,
-							scale: 1,
-							x: block.x + 24,
-							y: block.y + 24,
-							onComplete() {
-								block.setSize(0, 0);
-							}
-						});
-					});
-				}, 100);
-			}, 1080);
+		});
+	}
+
+	static left() {
+		return new Promise((resolve) => {
+			this.instance.blocks.forEach((block, i) => {
+				this.instance.tweens.add({
+					targets: block,
+					delay: (((i % 20) - 10) * -1 + 10) * 50,
+					duration: 100,
+					scale: 48,
+					x: block.x - 24,
+					y: block.y - 24,
+					onStart() {
+						block.setSize(1, 1);
+					},
+					onComplete() {
+						if (i === 0) {
+							resolve();
+							setTimeout(() => {
+								this.instance.blocks.forEach((block, i) => {
+									this.instance.tweens.add({
+										targets: block,
+										delay: (((i % 20) - 10) * -1 + 10) * 50,
+										duration: 100,
+										scale: 1,
+										x: block.x + 24,
+										y: block.y + 24,
+										onComplete() {
+											block.setSize(0, 0);
+										}
+									});
+								});
+							}, 100);
+						}
+					},
+					callbackScope: this
+				});
+			});
 		});
 	}
 }

@@ -11,8 +11,10 @@ export default class Main extends UpdatedScene {
 	tilemap = "playground";
 	parallax = "none";
 	levels = {
-		next: "house"
+		prev: null,
+		next: null
 	};
+	started = false;
 
 	preload() {
 		this.load.tilemapTiledJSON(this.tilemap, `tilemap/${this.tilemap}.json`);
@@ -36,8 +38,8 @@ export default class Main extends UpdatedScene {
 		this.createParalax();
 
 		// Player
-		const player = new Player(this, spawnPoints, "start");
-		this.entities.add(player);
+		this.player = new Player(this, spawnPoints, this.scene.settings.data.side);
+		this.entities.add(this.player);
 
 		// Otis
 		if (Otis.currentLevel === this.constructor.name) {
@@ -45,9 +47,9 @@ export default class Main extends UpdatedScene {
 			setTimeout(() => {
 				otis = new Otis(
 					this,
-					shrines.start.x,
-					shrines.start.y,
-					player,
+					shrines[this.scene.settings.data.side].x,
+					shrines[this.scene.settings.data.side].y,
+					this.player,
 					shrines
 				);
 				this.entities.add(otis);
@@ -60,7 +62,7 @@ export default class Main extends UpdatedScene {
 		// Camera
 		this.cameras.main
 			.setZoom(3)
-			.startFollow(player, false, 0.15, 0.15)
+			.startFollow(this.player, false, 0.15, 0.15)
 			.setBounds(0, 0, world.widthInPixels, world.heightInPixels);
 	}
 
@@ -284,10 +286,30 @@ export default class Main extends UpdatedScene {
 	nextLevel() {
 		this.scene.pause(this.constructor.name);
 		if (Otis.currentLevel === this.constructor.name) {
-			Otis.currentLevel = this.levels.next;
+			Otis.currentLevel = this.levels.next.constructor.name;
 		}
 		Transition.right().then(() => {
-			this.scene.start(this.levels.next);
+			this.scene
+				.add(this.levels.next.constructor.name, this.levels.next, true, {
+					side: "start"
+				})
+				.scene.sendToBack();
+			this.scene.remove(this.constructor.name);
+		});
+	}
+
+	prevLevel() {
+		this.scene.pause(this.constructor.name);
+		if (Otis.currentLevel === this.constructor.name) {
+			Otis.currentLevel = this.levels.prev.constructor.name;
+		}
+		Transition.left().then(() => {
+			this.scene
+				.add(this.levels.prev.constructor.name, this.levels.prev, true, {
+					side: "end"
+				})
+				.scene.sendToBack();
+			this.scene.remove(this.constructor.name);
 		});
 	}
 }
