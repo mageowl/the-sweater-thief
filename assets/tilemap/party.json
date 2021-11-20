@@ -276,8 +276,8 @@
                  "rotation":0,
                  "type":"npc",
                  "visible":true,
-                 "width":32,
-                 "x":176,
+                 "width":16,
+                 "x":192,
                  "y":144
                 }, 
                 {
