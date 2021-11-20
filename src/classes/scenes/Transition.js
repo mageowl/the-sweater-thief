@@ -29,6 +29,7 @@ export default class Transition extends UpdatedScene {
 	static right() {
 		return new Promise((resolve) => {
 			this.instance.blocks.forEach((block, i) => {
+				block.setPosition((i % 20) * 48 + 24, Math.floor(i / 20) * 48 + 24);
 				this.instance.tweens.add({
 					targets: block,
 					delay: (i % 20) * 50,
@@ -68,6 +69,7 @@ export default class Transition extends UpdatedScene {
 	static left() {
 		return new Promise((resolve) => {
 			this.instance.blocks.forEach((block, i) => {
+				block.setPosition((i % 20) * 48 + 24, Math.floor(i / 20) * 48 + 24);
 				this.instance.tweens.add({
 					targets: block,
 					delay: (((i % 20) - 10) * -1 + 10) * 50,
