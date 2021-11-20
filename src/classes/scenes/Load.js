@@ -67,9 +67,11 @@ export default class Load extends UpdatedScene {
 			"paralax.forest.background",
 			"sprites/parallax/trees_background.png"
 		);
+
+		this.load.image("menu.main", "scenes/title.png");
 	}
 
 	create() {
-		this.scene.start("House", { side: "start" });
+		this.scene.start("MainMenu");
 	}
 }

@@ -17,7 +17,7 @@ export default class Cloud extends Phaser.Physics.Arcade.Sprite {
 		this.xPos = x;
 
 		scene.add.existing(this);
-		scene.physics.add.existing(this);
+		scene.physics.add.existing(this, true);
 
 		scene.physics.add.collider(scene.entities, this, this.fall);
 
