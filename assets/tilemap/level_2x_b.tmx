@@ -297,7 +297,7 @@
  <objectgroup id="6" name="objects">
   <object id="10" type="shrine" x="128" y="80" width="32" height="32">
    <properties>
-    <property name="start" type="bool" value="false"/>
+    <property name="start" type="bool" value="true"/>
    </properties>
   </object>
   <object id="12" name="start" type="player-spawn" x="16" y="304">
@@ -315,7 +315,7 @@
   <object id="15" type="cloud" x="64" y="256" width="48" height="32"/>
   <object id="18" type="shrine" x="480" y="80" width="32" height="32">
    <properties>
-    <property name="start" type="bool" value="true"/>
+    <property name="start" type="bool" value="false"/>
    </properties>
   </object>
   <object id="19" type="balloons" x="592" y="256" width="32" height="48"/>

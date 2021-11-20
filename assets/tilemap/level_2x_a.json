@@ -135,7 +135,7 @@
                         {
                          "name":"start",
                          "type":"bool",
-                         "value":false
+                         "value":true
                         }],
                  "rotation":0,
                  "type":"shrine",
@@ -221,7 +221,7 @@
                         {
                          "name":"start",
                          "type":"bool",
-                         "value":true
+                         "value":false
                         }],
                  "rotation":0,
                  "type":"shrine",
