@@ -3,8 +3,8 @@ import UpdatedScene from "../template/scenes/UpdatedScene.js";
 export default class Player extends Phaser.Physics.Arcade.Sprite {
 	static SPEED = 125;
 	static JUMP_HEIGHT = 200;
+	static hasSweater = true;
 
-	hasSweater = true;
 	stun = 0;
 	dead = false;
 
@@ -54,7 +54,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
 			if (currentTile?.properties?.hazard) {
 				// DIE!
 				this.play("player.death").once("animationcomplete", () => {
-					const respawn = this.spawn[this.hasSweater ? "start" : "end"];
+					const respawn = this.spawn[Player.hasSweater ? "start" : "end"];
 					this.setPosition(respawn.x, respawn.y);
 					this.dead = false;
 					this.setVelocity(0).setDepth(0).body.setAllowGravity(true);
@@ -69,27 +69,27 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
 			if (this.body.onFloor()) {
 				if (input.D)
 					this.play(
-						`player.${this.hasSweater ? "sweater" : "nosweater"}.run`,
+						`player.${Player.hasSweater ? "sweater" : "nosweater"}.run`,
 						true
 					);
 				else if (input.A)
 					this.play(
-						`player.${this.hasSweater ? "sweater" : "nosweater"}.run`,
+						`player.${Player.hasSweater ? "sweater" : "nosweater"}.run`,
 						true
 					);
 				else
 					this.play(
-						`player.${this.hasSweater ? "sweater" : "nosweater"}.idle`,
+						`player.${Player.hasSweater ? "sweater" : "nosweater"}.idle`,
 						true
 					);
 			} else {
 				if (this.body.velocity.y < 0)
 					this.play(
-						`player.${this.hasSweater ? "sweater" : "nosweater"}.jump.up`
+						`player.${Player.hasSweater ? "sweater" : "nosweater"}.jump.up`
 					);
 				else
 					this.play(
-						`player.${this.hasSweater ? "sweater" : "nosweater"}.jump.down`
+						`player.${Player.hasSweater ? "sweater" : "nosweater"}.jump.down`
 					);
 			}
 

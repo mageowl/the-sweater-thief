@@ -29,6 +29,22 @@ class Bridge extends Main {
 	parallax = "town";
 	levels = {
 		prev: Woods,
+		next: PlatformingA
+	};
+}
+class PlatformingA extends Main {
+	tilemap = "level_2x_a";
+	parallax = "town";
+	levels = {
+		prev: Bridge,
+		next: PlatformingB
+	};
+}
+class PlatformingB extends Main {
+	tilemap = "level_2x_b";
+	parallax = "town";
+	levels = {
+		prev: PlatformingA,
 		next: null
 	};
 }

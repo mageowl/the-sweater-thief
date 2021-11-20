@@ -1,11 +1,12 @@
 import UpdatedScene from "../template/scenes/UpdatedScene.js";
+import Player from "./Player.js";
 
 export default class Otis extends Phaser.Physics.Arcade.Sprite {
 	static SPEED = 100;
 	static JUMP_HEIGHT = 200;
 	static currentLevel = null;
+	static hasSweater = false;
 
-	hasSweater = false;
 	stun = 0;
 	teleporting = false;
 
@@ -35,7 +36,7 @@ export default class Otis extends Phaser.Physics.Arcade.Sprite {
 			this.play("otis.nosweater.stunned", true);
 			return;
 		} else {
-			if (!this.hasSweater) {
+			if (!Otis.hasSweater) {
 				// Movement
 				const diff = this.player.x - this.x;
 				if (Math.abs(diff) > 30 || Math.abs(this.player.y - this.y) < 10) {
@@ -61,8 +62,8 @@ export default class Otis extends Phaser.Physics.Arcade.Sprite {
 
 				// Steal Sweater
 				if (this.scene.physics.overlap(this, this.player)) {
-					this.hasSweater = true;
-					this.player.hasSweater = false;
+					Otis.hasSweater = true;
+					Player.hasSweater = false;
 					this.player.stun = 45;
 					this.setTexture("otis_sweater");
 					this.player.setTexture("player_no_sweater");
@@ -90,7 +91,7 @@ export default class Otis extends Phaser.Physics.Arcade.Sprite {
 							((jumpTile === 2 || jumpTile === 4) &&
 								this.x > this.shrines.start.x)) &&
 						(jumpTile === 3 || jumpTile === 4
-							? this.shrines.start.y + 25 < this.y
+							? this.shrines.start.y < this.y
 							: true) &&
 						this.body.onFloor()
 					) {
@@ -121,8 +122,8 @@ export default class Otis extends Phaser.Physics.Arcade.Sprite {
 					this.scene.physics.overlap(this, this.player) &&
 					!this.player.stun > 0
 				) {
-					this.hasSweater = false;
-					this.player.hasSweater = true;
+					Otis.hasSweater = false;
+					Player.hasSweater = true;
 					this.setTexture("otis");
 					this.player.setTexture("player");
 					this.stun = 60;
@@ -136,17 +137,17 @@ export default class Otis extends Phaser.Physics.Arcade.Sprite {
 			if (this.body.onFloor() && !this.teleporting) {
 				if (xDir !== 0)
 					this.play(
-						`otis.${this.hasSweater ? "sweater" : "nosweater"}.run`,
+						`otis.${Otis.hasSweater ? "sweater" : "nosweater"}.run`,
 						true
 					);
 			} else if (!this.teleporting) {
 				if (this.body.velocity.y < 0)
 					this.play(
-						`otis.${this.hasSweater ? "sweater" : "nosweater"}.jump.up`
+						`otis.${Otis.hasSweater ? "sweater" : "nosweater"}.jump.up`
 					);
 				else
 					this.play(
-						`otis.${this.hasSweater ? "sweater" : "nosweater"}.jump.down`
+						`otis.${Otis.hasSweater ? "sweater" : "nosweater"}.jump.down`
 					);
 			}
 

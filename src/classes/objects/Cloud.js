@@ -31,7 +31,10 @@ export default class Cloud extends Phaser.Physics.Arcade.Sprite {
 	 * @param {Phaser.Physics.Arcade.Sprite} entity
 	 */
 	fall = (entity) => {
-		if (entity.y + entity.height / 2 - 5 < this.y && entity.hasSweater) {
+		if (
+			entity.y + entity.height / 2 - 5 < this.y &&
+			entity.constructor.hasSweater
+		) {
 			this.strength -= 1;
 			this.x = this.xPos + Math.sin(this.strength / 1.5) * 2.5;
 			setTimeout(() => {
