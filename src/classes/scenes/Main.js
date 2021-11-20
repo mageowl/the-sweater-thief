@@ -91,6 +91,13 @@ export default class Main extends UpdatedScene {
 			frames: "bush",
 			frameRate: 10
 		});
+		this.anims.create({
+			key: "balloons",
+			frames: this.anims.generateFrameNumbers("shrine", {
+				frames: [1, 2, 3, 4, 5, 6, 7]
+			}),
+			frameRate: 10
+		});
 	}
 
 	/**
@@ -153,7 +160,10 @@ export default class Main extends UpdatedScene {
 						break;
 					}
 					case "balloons": {
-						this.add.sprite(x, y, "");
+						this.add
+							.sprite(x, y, "balloons")
+							.setOrigin(0)
+							.play({ key: "balloons", repeat: -1 });
 					}
 				}
 			}
