@@ -252,7 +252,7 @@
                          "value":"npc_bouncer"
                         }],
                  "rotation":0,
-                 "type":"npc",
+                 "type":"bouncer",
                  "visible":true,
                  "width":16,
                  "x":592,
@@ -301,6 +301,17 @@
                  "width":48,
                  "x":512,
                  "y":240
+                }, 
+                {
+                 "height":48,
+                 "id":33,
+                 "name":"",
+                 "rotation":0,
+                 "type":"bush",
+                 "visible":true,
+                 "width":48,
+                 "x":320,
+                 "y":240
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -321,7 +332,7 @@
          "y":0
         }],
  "nextlayerid":17,
- "nextobjectid":33,
+ "nextobjectid":34,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.7.2",
