@@ -6,6 +6,12 @@ import Shrine from "../objects/Shrine.js";
 import UpdatedScene from "../template/scenes/UpdatedScene.js";
 
 export default class Main extends UpdatedScene {
+	tilemap = "playground";
+	parallax = "town";
+	levels = {
+		next: "house"
+	};
+
 	preload() {
 		this.load.aseprite(
 			"player",
@@ -43,7 +49,26 @@ export default class Main extends UpdatedScene {
 		this.load.image("tileset", "sprites/tileset/tileset.png");
 		this.load.image("control", "sprites/tileset/control.png");
 
-		this.load.tilemapTiledJSON("playground", "tilemap/level_bridge.json");
+		this.load.image("paralax.clouds.1", "sprites/parallax/clouds_1.png");
+		this.load.image("paralax.clouds.2", "sprites/parallax/clouds_2.png");
+		this.load.image("paralax.sky", "sprites/parallax/sky_gradient.png");
+		this.load.image("paralax.sun", "sprites/parallax/sun.png");
+		this.load.image("paralax.town", "sprites/parallax/town_background.png");
+		this.load.image("paralax.woods", "sprites/parallax/forest_background.png");
+		this.load.image(
+			"paralax.forest.foreground",
+			"sprites/parallax/trees_foreground.png"
+		);
+		this.load.image(
+			"paralax.forest.midground",
+			"sprites/parallax/trees_midground.png"
+		);
+		this.load.image(
+			"paralax.forest.background",
+			"sprites/parallax/trees_background.png"
+		);
+
+		this.load.tilemapTiledJSON("tilemap", `tilemap/${this.tilemap}.json`);
 	}
 
 	create() {
@@ -54,11 +79,14 @@ export default class Main extends UpdatedScene {
 		this.entities = this.add.group();
 
 		// Tilemap
-		const world = this.add.tilemap("playground");
+		const world = this.add.tilemap("tilemap");
 		world.addTilesetImage("Level", "tileset");
 		world.addTilesetImage("Control", "control");
 
 		const { shrines, spawnPoints } = this.createTilemap(world);
+
+		// Paralax
+		this.createParalax();
 
 		// Player
 		const player = new Player(this, spawnPoints, "start");
@@ -75,7 +103,7 @@ export default class Main extends UpdatedScene {
 
 		this.cameras.main
 			.setZoom(3)
-			.startFollow(player)
+			.startFollow(player, false, 0.15, 0.15)
 			.setBounds(0, 0, world.widthInPixels, world.heightInPixels);
 	}
 
@@ -118,9 +146,12 @@ export default class Main extends UpdatedScene {
 			}
 		});
 
-		const background = world
-			.createLayer("background", "Level", 0, 0)
+		const background1 = world
+			.createLayer("background1", "Level", 0, 0)
 			.setDepth(-1);
+		const background2 = world
+			.createLayer("background2", "Level", 0, 0)
+			.setDepth(-2);
 
 		this.jumps = world.createLayer("jumps", "Control", 0, 0).setVisible(false);
 
@@ -136,7 +167,6 @@ export default class Main extends UpdatedScene {
 						break;
 					}
 					case "shrine": {
-						console.log(properties);
 						shrines[getProperty(properties, "start") ? "start" : "end"] =
 							new Shrine(this, x + width / 2, y + height / 2);
 						break;
@@ -149,5 +179,96 @@ export default class Main extends UpdatedScene {
 		);
 
 		return { shrines, spawnPoints };
+	}
+
+	createParalax() {
+		if (this.parallax === "town") {
+			this.add
+				.tileSprite(
+					160,
+					0,
+					this.level.tilemap.widthInPixels,
+					32,
+					"paralax.clouds.1"
+				)
+				.setOrigin(0)
+				.setDepth(-3)
+				.setScrollFactor(0.5, 1);
+			this.add
+				.tileSprite(
+					192,
+					0,
+					this.level.tilemap.widthInPixels,
+					48,
+					"paralax.clouds.2"
+				)
+				.setOrigin(0)
+				.setDepth(-4)
+				.setScrollFactor(0.4, 1);
+			this.add
+				.tileSprite(320, 0, this.level.tilemap.widthInPixels, 64, "paralax.sky")
+				.setOrigin(0)
+				.setDepth(-6)
+				.setScrollFactor(0, 1);
+			this.add
+				.image(550, 30, "paralax.sun")
+				.setScrollFactor(0.1, 1)
+				.setDepth(-5);
+			this.add
+				.tileSprite(
+					192,
+					this.level.tilemap.heightInPixels - 48,
+					this.level.tilemap.widthInPixels,
+					64,
+					"paralax.town"
+				)
+				.setOrigin(0, 1)
+				.setDepth(-4)
+				.setScrollFactor(0.4, 1);
+			this.add
+				.tileSprite(
+					160,
+					this.level.tilemap.heightInPixels,
+					this.level.tilemap.widthInPixels,
+					80,
+					"paralax.woods"
+				)
+				.setOrigin(0, 1)
+				.setDepth(-4)
+				.setScrollFactor(0.5, 1);
+		} else if (this.parallax === "forest") {
+			this.add
+				.tileSprite(
+					0,
+					this.level.tilemap.heightInPixels - 48,
+					this.level.tilemap.widthInPixels,
+					160,
+					"paralax.forest.foreground"
+				)
+				.setOrigin(0, 1)
+				.setDepth(-3);
+			this.add
+				.tileSprite(
+					80,
+					this.level.tilemap.heightInPixels - 48,
+					this.level.tilemap.widthInPixels,
+					160,
+					"paralax.forest.midground"
+				)
+				.setOrigin(0, 1)
+				.setScrollFactor(0.75, 1)
+				.setDepth(-4);
+			this.add
+				.tileSprite(
+					160,
+					this.level.tilemap.heightInPixels - 48,
+					this.level.tilemap.widthInPixels,
+					160,
+					"paralax.forest.background"
+				)
+				.setOrigin(0, 1)
+				.setScrollFactor(0.6, 1)
+				.setDepth(-5);
+		}
 	}
 }
