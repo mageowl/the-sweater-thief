@@ -1,5 +1,6 @@
 import House from "./classes/scenes/Levels.js";
 import Load from "./classes/scenes/Load.js";
+import MainMenu from "./classes/scenes/MainMenu.js";
 import Transition from "./classes/scenes/Transition.js";
 
 const game = new Phaser.Game({
@@ -24,7 +25,7 @@ const game = new Phaser.Game({
 		pixelArt: true,
 		antialias: false
 	},
-	scene: [Load, House, Transition],
+	scene: [Load, MainMenu, House, Transition],
 	backgroundColor: "#db604c"
 });
 
