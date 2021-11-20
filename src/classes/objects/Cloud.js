@@ -21,7 +21,7 @@ export default class Cloud extends Phaser.Physics.Arcade.Sprite {
 
 		scene.physics.add.collider(scene.entities, this, this.fall);
 
-		this.setImmovable(true).setOffset(0, 17).body.setAllowGravity(false);
+		this.setOffset(0, 17);
 		this.body.checkCollision.down = false;
 		this.body.checkCollision.left = false;
 		this.body.checkCollision.right = false;
