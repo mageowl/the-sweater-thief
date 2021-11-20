@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="40" height="22" tilewidth="16" tileheight="16" infinite="0" nextlayerid="17" nextobjectid="33">
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="40" height="22" tilewidth="16" tileheight="16" infinite="0" nextlayerid="17" nextobjectid="34">
  <editorsettings>
   <export target="level_bouncer.json" format="json"/>
  </editorsettings>
@@ -330,6 +330,7 @@
   <object id="30" type="cloud" x="128" y="192" width="48" height="32"/>
   <object id="31" type="cloud" x="128" y="144" width="48" height="32"/>
   <object id="32" type="cloud" x="512" y="240" width="48" height="32"/>
+  <object id="33" type="bush" x="320" y="240" width="48" height="48"/>
  </objectgroup>
  <layer id="1" name="level" width="40" height="22">
   <data encoding="csv">
