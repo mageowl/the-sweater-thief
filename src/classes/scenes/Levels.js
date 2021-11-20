@@ -45,6 +45,14 @@ class PlatformingB extends Main {
 	parallax = "town";
 	levels = {
 		prev: PlatformingA,
+		next: Bouncer
+	};
+}
+class Bouncer extends Main {
+	tilemap = "level_bouncer";
+	parallax = "town";
+	levels = {
+		prev: PlatformingB,
 		next: null
 	};
 }

@@ -34,18 +34,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
 			Object.entries(this.keys).map(([name, { isDown }]) => [name, isDown])
 		);
 
-		if (this.stun > 0) {
-			this.stun--;
-			this.play("player.nosweater.stunned", true);
-			if (this.body.onFloor()) this.setVelocityX(0);
-			return;
-		} else if (!this.dead) {
-			// Movement
-			this.setVelocityX((input.D - input.A) * Player.SPEED);
-			if (input.W && this.body.onFloor()) {
-				this.setVelocityY(-Player.JUMP_HEIGHT);
-			}
-
+		if (!this.dead) {
 			// Hazards
 			const currentTile =
 				this.scene.level.getTileAtWorldXY(
@@ -64,6 +53,19 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
 				this.setVelocity(0).setDepth(2).body.setAllowGravity(false);
 
 				return;
+			}
+		}
+
+		if (this.stun > 0) {
+			this.stun--;
+			this.play("player.nosweater.stunned", true);
+			if (this.body.onFloor()) this.setVelocityX(0);
+			return;
+		} else if (!this.dead) {
+			// Movement
+			this.setVelocityX((input.D - input.A) * Player.SPEED);
+			if (input.W && this.body.onFloor()) {
+				this.setVelocityY(-Player.JUMP_HEIGHT);
 			}
 
 			// Animation

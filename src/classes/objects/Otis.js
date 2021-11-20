@@ -41,7 +41,7 @@ export default class Otis extends Phaser.Physics.Arcade.Sprite {
 				const diff = this.player.x - this.x;
 				if (Math.abs(diff) > 30 || Math.abs(this.player.y - this.y) < 10) {
 					this.setVelocityX(Math.sign(diff) * Otis.SPEED);
-				} else if (Math.abs(diff) > 20) {
+				} else if (Math.abs(diff) > 20 && this.body.onFloor()) {
 					this.setVelocityX(Math.sign(diff) * (Otis.SPEED / 2));
 				}
 
@@ -61,7 +61,10 @@ export default class Otis extends Phaser.Physics.Arcade.Sprite {
 				}
 
 				// Steal Sweater
-				if (this.scene.physics.overlap(this, this.player)) {
+				if (
+					this.scene.physics.overlap(this, this.player) &&
+					!this.player.dead
+				) {
 					Otis.hasSweater = true;
 					Player.hasSweater = false;
 					this.player.stun = 45;
@@ -77,7 +80,7 @@ export default class Otis extends Phaser.Physics.Arcade.Sprite {
 						Math.abs(this.shrines.start.y - this.y) < 10
 					) {
 						this.setVelocityX(Math.sign(diff) * Otis.SPEED);
-					} else if (Math.abs(diff) > 20) {
+					} else if (Math.abs(diff) > 20 && this.body.onFloor()) {
 						this.setVelocityX(Math.sign(diff) * (Otis.SPEED / 2));
 					}
 
