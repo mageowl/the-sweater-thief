@@ -1,7 +1,7 @@
 import Main from "./classes/scenes/main.js";
 
 const game = new Phaser.Game({
-	type: Phaser.AUTO,
+	type: Phaser.CANVAS,
 	scale: {
 		autoCenter: true,
 		mode: Phaser.Scale.FIT,
@@ -19,7 +19,8 @@ const game = new Phaser.Game({
 		baseURL: "assets"
 	},
 	render: {
-		pixelArt: true
+		pixelArt: true,
+		antialias: false
 	},
 	scene: Main,
 	backgroundColor: "#db604c"
