@@ -153,6 +153,20 @@ export default class Otis extends Phaser.Physics.Arcade.Sprite {
 
 			if (xDir === 1) this.setFlipX(false);
 			else if (xDir === -1) this.setFlipX(true);
+
+			if (this.y > this.scene.level.tilemap.heightInPixels) {
+				this.setVisible(false);
+				const shrine = Otis.hasSweater ? "end" : "start";
+				this.shrines[shrine]
+					.play("shrine.summon", true)
+					.once("animationcomplete", () => {
+						this.shrines[shrine].setFrame(0);
+						this.setVisible(true).setPosition(
+							this.shrines[shrine].x,
+							this.shrines[shrine].y
+						);
+					});
+			}
 		}
 	}
 }

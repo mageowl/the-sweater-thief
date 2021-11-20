@@ -47,10 +47,11 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
 			}
 
 			// Hazards
-			const currentTile = this.scene.level.getTileAtWorldXY(
-				this.x,
-				this.y + this.height / 2 - 3
-			);
+			const currentTile =
+				this.scene.level.getTileAtWorldXY(
+					this.x,
+					this.y + this.height / 2 - 3
+				) ?? this.scene.level.getTileAtWorldXY(this.x, this.y);
 			if (currentTile?.properties?.hazard) {
 				// DIE!
 				this.play("player.death").once("animationcomplete", () => {
