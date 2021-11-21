@@ -100,6 +100,21 @@ export default class Main extends UpdatedScene {
 			}),
 			frameRate: 10
 		});
+		this.anims.create({
+			key: "campfire",
+			frames: "campfire",
+			frameRate: 10
+		});
+		this.anims.create({
+			key: "boom_box",
+			frames: "boom_box",
+			frameRate: 10
+		});
+		this.anims.create({
+			key: "party_balloons",
+			frames: "party_balloons",
+			frameRate: 10
+		});
 
 		this.anims.create({
 			key: "npc_cocoa_dude_left",
@@ -139,6 +154,11 @@ export default class Main extends UpdatedScene {
 		this.anims.create({
 			key: "npc_idle_lady_left",
 			frames: "npc_idle_lady_left",
+			frameRate: 10
+		});
+		this.anims.create({
+			key: "npc_bouncer",
+			frames: "npc_bouncer",
 			frameRate: 10
 		});
 	}
@@ -210,11 +230,31 @@ export default class Main extends UpdatedScene {
 						break;
 					}
 					case "npc": {
-						console.log(getProperty(properties, "sprite"));
 						this.add
 							.sprite(x, y, "npc")
 							.setOrigin(0)
 							.play({ key: getProperty(properties, "sprite"), repeat: -1 });
+						break;
+					}
+					case "fire": {
+						this.add
+							.sprite(x, y, "campfire")
+							.setOrigin(0)
+							.play({ key: "campfire", repeat: -1 });
+						break;
+					}
+					case "boom_box": {
+						this.add
+							.sprite(x, y, "boom_box")
+							.setOrigin(0)
+							.play({ key: "boom_box", repeat: -1 });
+						break;
+					}
+					case "party_balloons": {
+						this.add
+							.sprite(x, y, "party_balloons")
+							.setOrigin(0)
+							.play({ key: "party_balloons", repeat: -1 });
 						break;
 					}
 				}

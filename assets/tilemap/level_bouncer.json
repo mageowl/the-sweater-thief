@@ -252,7 +252,7 @@
                          "value":"npc_bouncer"
                         }],
                  "rotation":0,
-                 "type":"bouncer",
+                 "type":"npc",
                  "visible":true,
                  "width":16,
                  "x":592,

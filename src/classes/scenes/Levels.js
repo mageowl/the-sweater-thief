@@ -60,7 +60,7 @@ class Party extends Main {
 	tilemap = "party";
 	parallax = "town";
 	levels = {
-		prev: Party,
+		prev: Bouncer,
 		next: null
 	};
 }

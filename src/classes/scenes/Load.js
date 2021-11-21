@@ -45,6 +45,21 @@ export default class Load extends UpdatedScene {
 			frameWidth: 32,
 			frameHeight: 48
 		});
+		this.load.spritesheet("campfire", "sprites/tileset/fire.png", {
+			frameWidth: 32
+		});
+		this.load.spritesheet("boom_box", "sprites/tileset/juke_box.png", {
+			frameWidth: 16,
+			frameHeight: 32
+		});
+		this.load.spritesheet(
+			"party_balloons",
+			"sprites/tileset/balloons_party.png",
+			{
+				frameWidth: 32,
+				frameHeight: 48
+			}
+		);
 
 		this.load.image("tileset", "sprites/tileset/tileset.png");
 		this.load.image("control", "sprites/tileset/control.png");
