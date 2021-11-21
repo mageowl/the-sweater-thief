@@ -331,7 +331,7 @@
   </object>
   <object id="37" type="npc" x="192" y="144" width="16" height="32">
    <properties>
-    <property name="sprite" value="npc_lady_idle_left"/>
+    <property name="sprite" value="npc_idle_lady_left"/>
    </properties>
   </object>
   <object id="38" type="npc" x="240" y="160" width="32" height="32">

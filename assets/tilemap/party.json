@@ -271,7 +271,7 @@
                         {
                          "name":"sprite",
                          "type":"string",
-                         "value":"npc_lady_idle_left"
+                         "value":"npc_idle_lady_left"
                         }],
                  "rotation":0,
                  "type":"npc",

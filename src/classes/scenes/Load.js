@@ -113,10 +113,11 @@ export default class Load extends UpdatedScene {
 		this.load.spritesheet(
 			"npc_idle_lady_left",
 			"sprites/NPCs/npc_idle_lady_left.png",
-			{ frameWidth: 16 }
+			{ frameWidth: 16, frameHeight: 32 }
 		);
-		this.load.spritesheet("npc_bouncer", "sprites/NPCs/npc_bouncer.png", {
-			frameWidth: 16
+		this.load.spritesheet("npc_bouncer", "sprites/NPCs/bouncer.png", {
+			frameWidth: 16,
+			frameHeight: 32
 		});
 	}
 
