@@ -6,6 +6,7 @@ import Player from "../objects/Player.js";
 import Shrine from "../objects/Shrine.js";
 import UpdatedScene from "../template/scenes/UpdatedScene.js";
 import Transition from "./Transition.js";
+import TextBubble from "../objects/TextBubble.js";
 
 export default class Main extends UpdatedScene {
 	tilemap = "playground";
@@ -64,6 +65,14 @@ export default class Main extends UpdatedScene {
 			.setZoom(3)
 			.startFollow(this.player, false, 0.15, 0.15)
 			.setBounds(0, 0, world.widthInPixels, world.heightInPixels);
+
+		// Bounds
+		this.physics.world.setBounds(
+			0,
+			0,
+			world.widthInPixels,
+			world.heightInPixels
+		);
 	}
 
 	createAnimations() {
@@ -234,6 +243,9 @@ export default class Main extends UpdatedScene {
 							.sprite(x, y, "npc")
 							.setOrigin(0)
 							.play({ key: getProperty(properties, "sprite"), repeat: -1 });
+						if (getProperty(properties, "bouncer")) {
+							new TextBubble(this, x, y, "no_sweater");
+						}
 						break;
 					}
 					case "fire": {
