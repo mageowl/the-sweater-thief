@@ -136,6 +136,8 @@ export default class Load extends UpdatedScene {
 			frameWidth: 16,
 			frameHeight: 32
 		});
+
+		this.load.audio("music", "music/Loop-2-full.mp3");
 	}
 
 	create() {
