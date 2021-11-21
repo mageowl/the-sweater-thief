@@ -101,6 +101,12 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
 		}
 
 		// Change level
+		this.setCollideWorldBounds(
+			this.x > this.scene.level.tilemap.widthInPixels - 48 &&
+				this.scene.constructor.name === "Bouncer" &&
+				!Player.hasSweater
+		);
+
 		if (this.x > this.scene.level.tilemap.widthInPixels) {
 			this.scene.nextLevel();
 		}

@@ -64,6 +64,8 @@ export default class Load extends UpdatedScene {
 		this.load.image("tileset", "sprites/tileset/tileset.png");
 		this.load.image("control", "sprites/tileset/control.png");
 
+		this.load.image("chat.no_sweater", "sprites/tileset/chat_no_sweater.png");
+
 		this.load.image("paralax.clouds.1", "sprites/parallax/clouds_1.png");
 		this.load.image("paralax.clouds.2", "sprites/parallax/clouds_2.png");
 		this.load.image("paralax.sky", "sprites/parallax/sky_gradient.png");

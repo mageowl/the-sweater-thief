@@ -247,6 +247,11 @@
                  "name":"",
                  "properties":[
                         {
+                         "name":"bouncer",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
                          "name":"sprite",
                          "type":"string",
                          "value":"npc_bouncer"
@@ -314,6 +319,12 @@
                  "y":240
                 }],
          "opacity":1,
+         "properties":[
+                {
+                 "name":"bouncer",
+                 "type":"bool",
+                 "value":true
+                }],
          "type":"objectgroup",
          "visible":true,
          "x":0,
@@ -332,7 +343,7 @@
          "y":0
         }],
  "nextlayerid":17,
- "nextobjectid":34,
+ "nextobjectid":38,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.7.2",
